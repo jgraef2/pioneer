@@ -1,14 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,500i,600,600i');
+@font-face {
+    font-family: 'aleolight';
+    src: url('Aleo-Light-webfont.eot');
+    src: url('Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aleo-Light-webfont.woff2') format('woff2'),
+         url('Aleo-Light-webfont.woff') format('woff'),
+         url('Aleo-Light-webfont.ttf') format('truetype'),
+         url('Aleo-Light-webfont.svg#aleolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+nav {
+  position: fixed;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 47vh;
+  padding: 0px;
+  margin-left: -160px;
+  transform: rotate(90deg);
+  -webkit-transform: rotateZ(90deg);
+  -webkit-transform-origin: 50%  50%;
+  display: inline;
+  z-index: 5;
+}
 
+nav button {
+  background-color: transparent;
+  color:#F9423A;
+  border: none;
+  border-spacing: 9px;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 5px;
+  display: inline;
+  z-index: 5;
+}
+#emailcontainer {
+  position: fixed;
+  transform: rotate(90deg);
+  text-align: center;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  width: 102vh;
+  bottom: 0;
+  right: 2.5em;
+  line-height: 2em;
+  transform-origin: 100% 100%;
+  -webkit-transform-origin: 100%  100%;
+}
+#navemail {
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  -webkit-filter: blur(0);
+  color:#3f3f3f;
+  border: none;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 5px;
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav button:hover {
+  cursor: pointer;
+  color:#3f3f3f;
+}
 .logo {
   display: block;
   width: 500px;
   margin: 0 auto;
-  padding-top: 15%;
+  padding-top: 9vh;
 }
 
-main {
-    overflow: hidden;
-    background-color: #FFF9F5;
-    height: 100vh;
+.hideme {
+    opacity:0;
+}
+footer {
+  margin-top: 10%;
+}
+.ftlinks {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15%;
+}
+.ftbut {
+  height: 110px;
+  width: 31%;
+  flex: none;
+  margin: 0 auto;
+  background: transparent;
+  border: 2.8px solid #F9423A;
+  color: #F9423A;
+  font-size: 1.7em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+.ftbutinner {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.ftbut:hover {
+  color: #FFF9F5;
+  background-color: #F9423A;
+}
+#values {
+  font-family: EBGaramond;
+  font-weight:600;
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #3f3f3f;
+  z-index: -100000;
+}
+#values:after {
+    content: "QUALITY • CURIOSITY • INTEGRITY";
+}
+#badge {
+  margin: 0 auto;
+  width: 200px;
+}
+#copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: #A8A8A8;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+}
+.vertline {
+  display: block;
+  height: 300px;
+  width: 0px;
+  border-left: 1.3px solid #D9D9D9;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.tagline {
+  font-size: 3.2rem;
+  font-family: 'aleo';
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 auto;
+
+  color: #3F3F3F;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left:0;
+  z-index: -50;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 300px;
+  }
+  .tagline {
+    font-size: 1.4rem;
+    padding-top: 20px;
+    opacity: 1;
+  }
+  .vertline {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  #navemail {
+    display: none;
+  }
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ftbut {
     width: 100%;
+    margin: 10px;
+  }
+  .ftbutinner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #values:after {
+    display: block;
+    white-space: pre;
+    content: "QUALITY\A CURIOSITY\A INTEGRITY";
+    line-height: 2em;
+  }
+  #badge {
+    margin-top: 13%;
+  }
+  #copyright:after {
+    display: block;
+    white-space: pre;
+    content: "JOSH@PIONEERMADE.COM";
+  }
+}
+@media (max-width: 1300px) {
+  nav {
+    z-index: 50;
+  }
+  #navemail {
+    z-index: 50;
+  }
 }
