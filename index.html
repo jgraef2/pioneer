@@ -75,6 +75,20 @@
     	<!-- header -->
 
       <div id="navplace">
+<!--
+        <div id="emailcontainer">
+          <div id="navemail">
+            JOSH@PIONEERMADE.COM
+          </div>
+        </div>
+
+        <nav>
+            <button onclick="window.location.href='services.html'">SERVICES</button>
+            <button onclick="window.location.href='about.html'">ABOUT</button>
+            <button onclick="window.location.href='log.html'">LOG</button>
+        </nav>
+-->
+
       </div>
 
         	<header role="header" class="monster">
@@ -238,15 +252,14 @@
 
       <!-- footer -->
 
-            <footer class="">
+            <footer>
               <div class="row ftlinks">
-                <button class="ftbut">SERVICES</button>
-                <button class="ftbut ftbutinner">ABOUT</button>
-                <button class="ftbut">LOG</button>
+                <button onclick="window.location.href='services.html'" class="ftbut">SERVICES</button>
+                <button onclick="window.location.href='about.html'" class="ftbut ftbutinner">ABOUT</button>
+                <button onclick="window.location.href='log.html'" class="ftbut">LOG</button>
               </div>
-              <div id="values"></div>
-              <img src="img/badge@2x.png" id="badge"/>
-              <div id="copyright">&copy; 2018 Josh Graef</div>
+              <div id="ftplace">
+              </div>
             </footer>
 
         </main>
@@ -358,17 +371,26 @@
 
 
         <script src="js/custombox.min.js"></script>
-
+<!--
         <script>
           $.get("nav.html", function(data){
             $("#navplace").replaceWith(data);
           });
         </script>
+-->
+
         <script>
           $(function(){
             $('#navplace').load('nav.html');
           });
         </script>
+
+        <script>
+          $(function(){
+            $('#ftplace').load('ft.html');
+          });
+        </script>
+
     </body>
 
 </html>
