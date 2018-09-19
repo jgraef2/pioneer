@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:800');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,500i,600,600i');
 @font-face {
     font-family: 'aleolight';
-    src: url('Aleo-Light-webfont.eot');
-    src: url('Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Aleo-Light-webfont.woff2') format('woff2'),
-         url('Aleo-Light-webfont.woff') format('woff'),
-         url('Aleo-Light-webfont.ttf') format('truetype'),
-         url('Aleo-Light-webfont.svg#aleolight') format('svg');
+    src: url('../fonts/aleo/aleo-light-webfont.eot');
+    src: url('../fonts/aleo/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo/aleo-light-webfont.woff2') format('woff2'),
+         url('../fonts/aleo/aleo-light-webfont.woff') format('woff'),
+         url('../fonts/aleo/aleo-light-webfont.ttf') format('truetype'),
+         url('../fonts/aleo/aleo-light-webfont.svg#aleolight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -118,7 +119,7 @@ footer {
   background-color: #F9423A;
 }
 #values {
-  font-family: EBGaramond;
+  font-family: 'EB Garamond', serif;
   font-weight:600;
   height: 80px;
   width: 100%;
@@ -156,7 +157,7 @@ footer {
 }
 .tagline {
   font-size: 3.2rem;
-  font-family: 'aleo';
+  font-family: 'aleolight', serif;
   font-weight: lighter;
   text-align: center;
   margin: 0 auto;
@@ -170,6 +171,64 @@ footer {
   height: 100%;
   left:0;
   z-index: -50;
+}
+
+.logentry {
+  padding-top: 25px;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  text-align: center;
+  color: #3f3f3f;
+}
+.logentry strong {
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+}
+.logentry p {
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 10px;
+  font-family: 'aleolight', serif;
+  font-weight: lighter;
+  font-size: 1.4em;
+}
+.logentry button {
+  background-color: transparent;
+  color:#F9423A;
+  border: none;
+  border-bottom: 1px solid #F9423A;
+  font-family: 'Montserrat', sans-serif;
+  border-spacing: 9px;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 5px;
+  display: inline;
+}
+.logentry button:hover {
+  color: #3f3f3f;
+  border-bottom: 1px solid #3f3f3f;
+}
+@media (min-width: 992px) {
+  .logentry {
+    width: 455px;
+  }
+}
+@media (min-width: 1200px) {
+  .logentry {
+    width: 555px;
+  }
+}
+.logentryimg {
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .logo {
@@ -222,5 +281,65 @@ footer {
   }
   #navemail {
     z-index: 50;
+  }
+}
+.portfolio-modal .close-modal {
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 65px;
+    height: 65px;
+    background-color:rgba(255, 255, 255, 0.6);
+    opacity: .5
+    cursor: pointer;
+    z-index: 50;
+}
+
+.portfolio-modal .close-modal:hover {
+    background-color:rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+#close-m:hover + #portfolioModal15 {
+    opacity: 0.5;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 2px;
+    height: 63px;
+    margin-left: 32px;
+    margin-top: 1px;
+    background-color: #191919;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 2px;
+    height: 63px;
+    background-color: #191919;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .portfolio-modal .close-modal {
+    width: 40px;
+    height: 40px;
+  }
+  .portfolio-modal .close-modal .lr {
+    width: .5px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 2px;
+  }
+  .portfolio-modal .close-modal .lr .rl {
+    width: .5px;
+    height: 35px;
+    margin-left: 0px;
   }
 }
