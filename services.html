@@ -56,6 +56,8 @@
 
         <script src="scripts/modernizr.js"></script>
 
+        <script src="js/jag.js"></script>
+
         <script src="modaljs/classie.js"></script>
         <script src="modaljs/cssParser.js"></script>
         <script src="js/jquery-1.10.2.js"></script>
@@ -71,8 +73,10 @@
 
 
     <body>
-
     	<!-- header -->
+      <a href="index.html">
+        <img src="img/pwordmark.png" id="pwordmark" alt="Josh Graef Pioneer Brand Supply">
+      </a>
 
       <div id="navplace">
 <!--
@@ -88,21 +92,15 @@
             <button onclick="window.location.href='log.html'">LOG</button>
         </nav>
 -->
-
       </div>
 
-        	<header role="header" class="monster">
-                    <img src="img/flag.gif" class="logo" alt="Josh Graef Pioneer Made Brand Supply">
+      <div class="parallax">
 
-                    <div class="vertline"></div>
-                    <div class="tagline">
-                      Blazing Trails Through Uncharted Lands </br> Claiming Territory for the Bravest of Brands
-                    </div>
-                    <div class="vertline"></div>
+        <div class="parallax__layer parallax__layer--base">
 
-            </header>
-
-        <!-- header -->
+              <div class="heavypad headline headlinepara">
+                Premium Brand Development
+              </div>
 
         <!-- main -->
 
@@ -112,115 +110,37 @@
 
                 <div class="clearfix"></div>
 
-                <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-
-                	<ul class="grid-lod effect-2" id="grid">
-
-                      	<li>
-                        <figure class="grow" data-toggle="modal" data-target="#fsModal">
-                          	<img src="img/port/ws0.gif" alt="" class="img-responsive"/>
-                        </figure>
-                        </li>
-
-                        <li>
-                          <div class="logentry">
-                            	<div class="logentryimg" style="background-image: url(img/dude2.png)"></div>
-                                <strong>Brand is Territory</strong>
-                                <p>Stake your claim and be prepared to defend your land — the competition is always moving in.</p>
-                                <button>READ LOG ENTRY</button>
-                          </div>
-                        </li>
-
-                        <li>
-                          <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                              <img src="img/port/ws0.gif" alt="" class="img-responsive"/>
-                          </figure>
-                        </li>
-
-                        <li>
-                          <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                              <img src="img/port/lollycovergod.gif" alt="" class="img-responsive"/>
-                          </figure>
-                        </li>
-
-                        <li>
-                          <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                              <img src="img/port/ws0.gif" alt="" class="img-responsive"/>
-                          </figure>
-                        </li>
-
-                        <li>
-                          <div class="logentry">
-                            	<div class="logentryimg" style="background-image: url(img/dude2.png)"></div>
-                                <strong>Brand is Territory</strong>
-                                <p>Stake your claim and be prepared to defend your land — the competition is always moving in.</p>
-                                <button>READ LOG ENTRY</button>
-                          </div>
-                        </li>
-
-                        <li>
-                          <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                              <img src="img/port/ws0.gif" alt="" class="img-responsive"/>
-                          </figure>
-                        </li>
-
-                    </ul>
-
-                </section>
-
-
-
-                <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-                  <ul class="grid-lod effect-2" id="grid">
-
-                  <li>
-                    <figure class="grow" data-toggle="modal" data-target="#fsModal">
-                        <img src="img/port/ws0.gif" alt="" class="img-responsive"/>
-                    </figure>
-                    </li>
-
-                    <li>
-                      <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                          <img src="img/port/wayside.gif" alt="" class="img-responsive"/>
-                      </figure>
-                    </li>
-
-                    <li>
-                      <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                          <img src="img/port/glyphixcover2.gif" alt="" class="img-responsive"/>
-                      </figure>
-                    </li>
-
-                    <li>
-                      <div class="logentry">
-                          <div class="logentryimg" style="background-image: url(img/dude3.png)"></div>
-                            <strong>Brand is Territory</strong>
-                            <p>Stake your claim and be prepared to defend your land — the competition is always moving in.</p>
-                            <button>READ LOG ENTRY</button>
+                    <div class="servicescontainer">
+                      <div class="services second">
+                        <strong>Strategic Thinking</strong>
+                        <p>Competitive Analysis</br>Market Research</br>Identity Discovery</br>Campaign Strategy</br>Copywriting</br></p>
                       </div>
-                    </li>
+                      <div class="servicesimg first">
+                        <img src="img/dude2.png" alt=""/>
+                      </div>
+                    </div>
 
-                    <li>
-                      <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                          <img src="img/port/stevenbook3.gif" alt="" class="img-responsive"/>
-                      </figure>
-                    </li>
+                    <div class="servicescontainer">
+                      <div class="servicesimg">
+                        <img src="img/dude2.png" alt=""/>
+                      </div>
+                      <div class="services">
+                        <strong>Brand Development</strong>
+                        <p>Naming Creation</br>Brand Position</br>Brand Definition</br>Logo Design</br>Style Guides / Brandbooks</br></p>
+                      </div>
+                    </div>
 
-                    <li>
-                      <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                          <img src="img/port/bulbscover.gif" alt="" class="img-responsive"/>
-                      </figure>
-                    </li>
+                    <div class="servicescontainer">
+                      <div class="services second">
+                        <strong>Print + Digital Design</strong>
+                        <p>Websites / Landing Pages</br>Packaging / Dielines</br>Digital Ads</br>Collateral Buildout</br>Print Preparation</br></p>
+                      </div>
+                      <div class="servicesimg first">
+                        <img src="img/dude3.png" alt=""/>
+                      </div>
+                    </div>
 
-                    <li>
-                      <figure class="grow" data-toggle="modal" data-target="#fsModal2">
-                          <img src="img/port/lollycovergod.gif" alt="" class="img-responsive"/>
-                      </figure>
-                    </li>
 
-                </ul>
-
-                </section>
 
                 <div class="clearfix"></div>
 
@@ -230,7 +150,7 @@
 
             <footer>
               <div class="row ftlinks">
-                <button onclick="window.location.href='services.html'" class="ftbut">SERVICES</button>
+                <button onclick="window.location.href='index.html'" class="ftbut">WORK</button>
                 <button onclick="window.location.href='about.html'" class="ftbut ftbutinner">ABOUT</button>
                 <button onclick="window.location.href='log.html'" class="ftbut">LOG</button>
               </div>
@@ -359,6 +279,13 @@
 
 
         <script src="js/custombox.min.js"></script>
+<!--
+        <script>
+          $.get("nav.html", function(data){
+            $("#navplace").replaceWith(data);
+          });
+        </script>
+-->
 
         <script>
           $(function(){
@@ -371,7 +298,11 @@
             $('#ftplace').load('ft.html');
           });
         </script>
+                  </div>
 
+                  <div class="parallax__layer parallax__layer--back" id="leftgear">
+                    <div class="headersplash"><img src="img/patterns/dashes.png"></div>
+                  </div>
     </body>
 
 </html>
