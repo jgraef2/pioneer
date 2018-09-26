@@ -552,28 +552,6 @@ footer {
   -webkit-perspective: 1px;
   perspective: 1px;
 }
-@media (max-width: 920px) {
-  .parallax {
-    -webkit-perspective: none;
-    perspective: none;
-  }
-  .parallax__layer--base {
-    -webkit-transform: none;
-    transform: none;
-  }
-  .parallax__layer--back {
-    -webkit-transform: none;
-    transform: none;
-  }
-  .parallax__layer--third {
-    -webkit-transform: none;
-    transform: none;
-  }
-  .parallax__layer--fourth {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 .parallax__layer {
   pointer-events: none;
   -o-pointer-events: none;
@@ -602,10 +580,26 @@ footer {
   z-index: -5945983045982304958203458203498523;
 }
 @media (max-width: 920px) {
+  .parallax {
+    -webkit-perspective: none;
+    perspective: none;
+  }
+  .parallax__layer--base {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .parallax__layer--back {
+    -webkit-transform: none;
+    transform: none;
+  }
   .parallax__layer--third {
+    -webkit-transform: none;
+    transform: none;
     display: none;
   }
   .parallax__layer--fourth {
+    -webkit-transform: none;
+    transform: none;
     display: none;
   }
 }
