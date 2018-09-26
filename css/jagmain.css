@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:800');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i');
 @font-face {
     font-family: 'aleolight';
     src: url('../fonts/aleo/aleo-light-webfont.eot');
@@ -11,6 +11,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 #pwordmark {
   width: 300px;
   position: fixed;
@@ -23,25 +24,34 @@
 }
 @media (max-width: 992px) {
   #pwordmark {
-    position: fixed;
+    position: absolute;
   }
 }
-.headline {
+.headline h1 {
+  position: relative;
+  width: 100%;
   font-family: 'EB Garamond', serif;
   font-weight:600;
   font-size: 4em;
   color:#3f3f3f;
   text-align: center;
+  z-index: 5;
 }
 .heavypad {
   padding: 20%;
 }
 @media (max-width: 728px) {
-  .headline {
-    font-size: 2.5em;
+  .headline h1 {
+    font-size: 3.5em;
   }
   .heavypad {
-    padding-top: 38%;
+    margin-top: 28%;
+    padding: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .headline h1 {
+    font-size: 2.5em;
   }
 }
 
@@ -192,10 +202,19 @@ footer {
 .tagline {
   font-size: 3.2rem;
   font-family: 'aleolight', serif;
-  font-weight: lighter;
+  font-weight: normal;
   text-align: center;
   margin: 0 auto;
-
+  color: #3F3F3F;
+}
+.servtagline {
+  padding: 30px;
+  font-size: 3.2rem;
+  font-family: 'aleolight', serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -200px;
   color: #3F3F3F;
 }
 .bg {
@@ -291,6 +310,14 @@ footer {
     font-size: 1.4rem;
     padding-top: 20px;
     opacity: 1;
+  }
+  .servtagline {
+    padding: 5%;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    opacity: 1;
+    margin-top: 0px;
   }
   .vertline {
     display: none;
@@ -400,7 +427,7 @@ footer {
   display: flex;
   margin: 0 auto;
   padding-top: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   width: 70%;
 }
 
@@ -477,6 +504,11 @@ footer {
   }
 }
 
+.headersplash {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .headersplash img {
   position: absolute;
   left: 50%;
@@ -484,6 +516,33 @@ footer {
   /*top: 50%;*/
   -webkit-transform: translate(-50%, -20%);
   transform: translate(-50%, -20%);
+}
+.headersplash video {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  /*top: 50%;*/
+  -webkit-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
+  z-index: -23342342343;
+}
+#video2 {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  /*top: 50%;*/
+  -webkit-transform: translate(-50%, 80%);
+  transform: translate(-50%, 80%);
+  z-index: -23342342343;
+}
+#video3 {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  /*top: 50%;*/
+  -webkit-transform: translate(-50%, 80%);
+  transform: translate(-50%, 180%);
+  z-index: -23342342343;
 }
 /****** PARALLAX *********/
 
@@ -494,28 +553,78 @@ footer {
   -webkit-perspective: 1px;
   perspective: 1px;
 }
-
 .parallax__layer {
+  pointer-events: none;
+  -o-pointer-events: none;
+ -webkit-pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-
 .parallax__layer--back {
   -webkit-transform: translateZ(0.3px) scale(0.7);
   transform: translateZ(0.3px) scale(0.7);
 }
-
+.parallax__layer--third {
+  -webkit-transform: translateZ(0.7px) scale(0.23);
+  transform: translateZ(0.7px) scale(0.23);
+}
+.parallax__layer--fourth {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  z-index: -5945983045982304958203458203498523;
+}
+@media (max-width: 920px) {
+  .parallax__layer--third {
+    display: none;
+  }
+  .parallax__layer--fourth {
+    display: none;
+  }
+}
 /************** END PARALLAX ******************/
 
 
-#rotate {
-  transform: rotate(45deg);
+.headlinecirc {
+  width: 650px;
+  margin: 0 auto;
+  display: block;
+  margin-top: -130px;
+  overflow: hidden;
+  z-index: -6555555555;
+}
+@media (max-width: 728px) {
+  .headlinecirc {
+    width: 400px;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 500px) {
+  .headlinecirc {
+    width: 250px;
+    margin-top: -60px;
+  }
+}
+.marksthespot {
+  width: 1200px;
+  position: absolute;
+  z-index: -7;
+  margin-top: 120px;
+}
+.sideright {
+  margin-left: 42%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+.sideleft {
+  margin-right: 12%;
+  position: absolute;
 }
