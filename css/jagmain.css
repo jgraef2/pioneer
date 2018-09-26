@@ -137,7 +137,6 @@ footer {
   display: flex;
   align-items: stretch;
   margin: 0 auto;
-  display: flex;
   justify-content: space-between;
   margin-bottom: 15%;
 }
@@ -553,6 +552,28 @@ footer {
   -webkit-perspective: 1px;
   perspective: 1px;
 }
+@media (max-width: 920px) {
+  .parallax {
+    -webkit-perspective: none;
+    perspective: none;
+  }
+  .parallax__layer--base {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .parallax__layer--back {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .parallax__layer--third {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .parallax__layer--fourth {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 .parallax__layer {
   pointer-events: none;
   -o-pointer-events: none;
@@ -627,4 +648,13 @@ footer {
 .sideleft {
   margin-right: 12%;
   position: absolute;
+}
+.entriescontainer {
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 15%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
