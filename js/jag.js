@@ -1,3 +1,5 @@
+/*
+
 var leftItem = document.getElementById('item0'),
     rightItem = document.getElementById('item1');
 
@@ -25,3 +27,5 @@ window.addEventListener("optimizedScroll", function(){
   leftItem.style.transform = "rotate(-" + window.pageYOffset/100 + "deg)";
   rightItem.style.transform = "rotate(" + window.pageYOffset/100 + "deg)";
 })
+
+*/

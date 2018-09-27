@@ -632,17 +632,14 @@ footer {
   z-index: -7;
   margin-top: 120px;
 }
-.sideright {
-  margin-left: 42%;
-  position: absolute;
-  left: 50%;
+.bgdoodle {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
+  margin-top: 50%;
+  height: auto;
+  overflow: hidden;
 }
-.sideleft {
-  margin-right: 12%;
-  position: absolute;
-}
+
 .entriescontainer {
   display: flex;
   align-items: stretch;
