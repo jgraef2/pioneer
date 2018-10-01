@@ -378,7 +378,8 @@
         <script>
         $(document).ready(function() {
           if(window.location.href.indexOf('#fsModal') != -1) {
-            $('#fsModal').modal('show');
+            //$('#fsModal').modal('show');
+            $($('#fsModal').data("target")).modal("show");
           }
         });
         </script>
