@@ -656,7 +656,8 @@ footer {
   width: 800px;
   position: absolute;
   z-index: -7;
-  margin-top: 80px;
+  margin-top: 140px;
+  padding-left: 300px;
 }
 .bgdoodle {
   -webkit-transform: translate(0%, 0%);
