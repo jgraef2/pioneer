@@ -48,6 +48,10 @@
 
 }
 
+.grid figure img:hover {
+	opacity: 1;
+}
+
 
 
 .grid figure figcaption {

@@ -11,7 +11,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+figure:hover {
+  opacity: 1;
+}
 #pwordmark {
   width: 300px;
   position: fixed;
