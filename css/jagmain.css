@@ -378,66 +378,72 @@ footer {
     z-index: 50;
   }
 }
+
 .portfolio-modal .close-modal {
-    color: white;
+    color: #fff;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 65px;
     height: 65px;
-    background-color:rgba(255, 255, 255, 0.6);
-    opacity: .5
     cursor: pointer;
     z-index: 50;
 }
-
-.portfolio-modal .close-modal:hover {
-    background-color:rgba(255, 255, 255, 0.9);
-    cursor: pointer;
-}
-#close-m:hover + #portfolioModal15 {
-    opacity: 0.5;
-}
-
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 2px;
-    height: 63px;
-    margin-left: 32px;
-    margin-top: 1px;
-    background-color: #191919;
+    height: 33px;
+    background-color: #3f3f3f;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    margin-left: 40px;
+    margin-top: 8px;
 }
-
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
+.lr:hover {
+    background-color: #F9423A;
+}
+.portfolio-modal .close-modal .rl {
+    z-index: 1051;
     width: 2px;
-    height: 63px;
-    background-color: #191919;
+    height: 33px;
+    background-color: #3f3f3f;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    margin-left: 0px;
+    margin-top: 0px;
 }
-
+.rl:hover {
+    background-color: #F9423A;
+}
 @media (max-width: 768px) {
-  .portfolio-modal .close-modal {
-    width: 40px;
-    height: 40px;
-  }
   .portfolio-modal .close-modal .lr {
-    width: .5px;
-    height: 35px;
-    margin-left: 20px;
-    margin-top: 2px;
+      width: .5px;
+      height: 35px;
+      margin-left: 20px;
+      margin-top: 2px;
+  }
+  .portfolio-modal .close-modal {
+      width: 40px;
+      height: 40px;
   }
   .portfolio-modal .close-modal .lr .rl {
-    width: .5px;
-    height: 35px;
-    margin-left: 0px;
+      width: .5px;
+      height: 35px;
+      margin-left: 0;
+  }
+  .portfolio-modal .close-modal .lr .rl {
+      z-index: 1052;
+      width: 2px;
+      height: 63px;
+      background-color: #191919;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
   }
 }
+
 .servicescontainer {
   display: flex;
   margin: 0 auto;
@@ -695,6 +701,14 @@ footer {
   font-weight: 300;
   padding: 20px;
   padding-top: 50px;
+}
+.para a {
+  color: #F9423A;
+  text-decoration: none;
+}
+.para a:hover {
+  color: #3f3f3f;
+  text-decoration: underline;
 }
 .para strong {
   letter-spacing: 6px;
