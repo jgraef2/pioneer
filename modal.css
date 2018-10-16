@@ -92,19 +92,6 @@
     opacity: 1;
 }
 
-.closearea {
-  height: 40%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.4;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 5%;
-  font-family: Montserrat;
-  font-size: 30px;
-}
-
 .close {
   position: relative;
   right: 50%;
