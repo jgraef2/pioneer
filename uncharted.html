@@ -75,14 +75,18 @@
           gtag('config', 'UA-126615324-1');
         </script>
 
-
+        <script type="text/javascript">
+          $(window).on('load',function(){
+            $('#agreemodal').modal('show');
+          });
+        </script>
 
 	</head>
 
 
 
     <body>
-<div w3-include-html="modals.html"></div>
+
     	<!-- header -->
 
       <div id="navplace">
@@ -124,7 +128,7 @@
 
                 <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
 
-                	<ul class="grid-lod effect-2" id="grid">
+                	<ul class="grid-lod effect-25" id="grid">
 
                       	<li>
                         <figure class="grow" data-toggle="modal" data-target="#ppmodal">
@@ -183,7 +187,7 @@
 
 
                 <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-                  <ul class="grid-lod effect-2" id="grid">
+                  <ul class="grid-lod effect-25" id="grid">
 
                     <li>
                       <figure class="grow" data-toggle="modal" data-target="#spmodal">
@@ -254,10 +258,50 @@
         </main>
 
     	<!-- main -->
+      <!-- AGREEMENT MODAL -->
+      <div id="agreemodal"
+           class="portfolio-modal modal fade animated"
+           tabindex="-1"
+           role="dialog"
+           aria-labelledby="myModalLabel"
+           aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div id="closeareacontainer">
+             <a href="index.html">
+               <img src="img/pwordmark.png" id="pwordmark" alt="Josh Graef Pioneer Brand Supply">
+             </a>
+               <div class="agreemodalsidedood">
+                 <img src="img/sidedood.png">
+               </div>
+             <div class="butwait">
+               You Have Discovered Uncharted Lands
+             </div>
+             <div class="tagline">
+               By entering, you agree this portfolio link has been privately shared with you by Josh Graef of Pioneer Brand Supply. Uninvited eyes are strictly prohibited. Distribution, disclosure, saving, screenshotting, or sharing of this link, website, and all of its contents are not allowed by terms of entrance.
+             </div>
+             <div class="container closearea">
+             <button id="unchartedbtn" class="closebtn" onclick="window.location.href='index.html'">PUBLIC PORTFOLIO</button>
+             <button id="unchartedagree" class="closebtn" data-dismiss="modal">AGREE </br>& ENTER</button>
+           </div>
+           <div id="ftplace"></div>
+          </div>
+        </div>
+        <div class="md-overlay"></div>
+
+            <script src="scripts/jquery-2.1.4.min.js"></script>
+            <script src="scripts/jquery.fitvids.js"></script>
+            <script src="scripts/jquery.imagesloaded.min.js"></script>
+            <script src="scripts/main.js"></script>
+      </div>
+      </div>
+      <!-- AGREEMENT MODAL -->
+
 
       <div id="allmodals">
       </div>
-<div w3-include-html="modals.html"></div>
+
+
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -338,41 +382,6 @@
             $("#fsModal").modal();
           }
         });
-        </script>
-
-        <!-- INCLUDE MODAL HTML -->
-                <script>
-        function includeHTML() {
-          var z, i, elmnt, file, xhttp;
-          /* Loop through a collection of all HTML elements: */
-          z = document.getElementsByTagName("*");
-          for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-              /* Make an HTTP request using the attribute value as the file name: */
-              xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                  /* Remove the attribute, and call this function once more: */
-                  elmnt.removeAttribute("w3-include-html");
-                  includeHTML();
-                }
-              }
-              xhttp.open("GET", file, true);
-              xhttp.send();
-              /* Exit the function: */
-              return;
-            }
-          }
-        }
-        </script>
-
-        <script>
-        includeHTML();
         </script>
 
     </body>

@@ -928,3 +928,54 @@ footer {
   text-align: center;
   z-index: 5;
 }
+
+#agreemodal {
+    background-color: #FFF9F5;
+    height: 100vh;
+}
+#agreemodal .butwait {
+  padding-top: 300px;
+}
+#agreemodal .tagline {
+  width: 50%;
+}
+
+#agreemodal #closeareacontainer {
+  background-color: transparent;
+}
+
+#agreemodal .closebtn {
+  margin: 0;
+  width: 45%;
+}
+#agreemodal .container {
+  width: 700px;
+}
+#agreemodal .modal-content {
+  background-color: transparent;
+}
+#unchartedbtn {
+  color: #3f3f3f;
+  background-color: #FFF9F5;
+  border: 2.8px solid #3f3f3f;
+}
+#unchartedagree {
+  color: #FFF9F5;
+  background-color: #F9423A;
+}
+#unchartedagree:hover {
+  background-color: #FFF9F5;
+  color: #F9423A;
+}
+
+.agreemodalsidedood {
+  width: 100%;
+  z-index: -99999999110041234123412000;
+}
+.agreemodalsidedood img {
+  position: absolute;
+    margin-top: -180px;
+  width: 100%;
+  z-index: -99999999110041234123412000;
+
+}
