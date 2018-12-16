@@ -928,7 +928,11 @@ footer {
   text-align: center;
   z-index: 5;
 }
-
+@media (max-width: 728px) {
+  .butwait {
+    font-size: 2em;
+  }
+}
 #agreemodal {
     background-color: #FFF9F5;
     height: 100vh;
@@ -951,6 +955,16 @@ footer {
 #agreemodal .container {
   width: 700px;
 }
+@media (max-width: 728px) {
+  #agreemodal .container {
+    width: 100%;
+  }
+  #agreemodal .closebtn {
+    margin: 0;
+    width: 90%;
+    margin: 10px;
+  }
+}
 #agreemodal .modal-content {
   background-color: transparent;
 }
@@ -959,7 +973,12 @@ footer {
   background-color: #FFF9F5;
   border: 2.8px solid #3f3f3f;
 }
+#unchartedbtn:hover {
+  color: #FFF9F5;
+  background-color: #3f3f3f;
+}
 #unchartedagree {
+  margin-top: 20px;
   color: #FFF9F5;
   background-color: #F9423A;
 }
@@ -967,7 +986,6 @@ footer {
   background-color: #FFF9F5;
   color: #F9423A;
 }
-
 .agreemodalsidedood {
   width: 100%;
   z-index: -99999999110041234123412000;
@@ -977,5 +995,13 @@ footer {
     margin-top: -180px;
   width: 100%;
   z-index: -99999999110041234123412000;
-
+}
+@media (max-width: 728px) {
+  #agreemodal .butwait {
+    font-size: 2.5em;
+    padding-top: 150px;
+  }
+  #agreemodal .tagline {
+    width: 85%;
+  }
 }
