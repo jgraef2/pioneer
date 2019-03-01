@@ -52,6 +52,10 @@
 
         <link href="css/jagmain.css"  rel="stylesheet" type="text/css" >
 
+        <!-- NAV 2.0 --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="nav/css/style.css">
+
         <script src="scripts/modernizr.js"></script>
 
         <script src="js/jag.js"></script>
@@ -81,25 +85,14 @@
 
     <body>
 
-    	<!-- header -->
 
       <div id="navplace">
-<!--
-        <div id="emailcontainer">
-          <div id="navemail">
-            JOSH@PIONEERMADE.COM
-          </div>
-        </div>
-
-        <nav>
-            <button onclick="window.location.href='services.html'">SERVICES</button>
-            <button onclick="window.location.href='about.html'">ABOUT</button>
-            <button onclick="window.location.href='log.html'">LOG</button>
-        </nav>
--->
-
+        <!-- NAV WILL SHOW UP HERE BECAUSE OF SCRIPT AT BOTTOM -->
       </div>
 
+    	<!-- header -->
+
+<div id="page-wrapper">
         	<header role="header" class="monster">
                     <img src="img/flag.gif" class="logo" alt="Quality Brand Development and Supplies by Josh Graef">
 
@@ -306,7 +299,7 @@
               </div>
             </footer>
         </main>
-
+<div>
     	<!-- main -->
 
 
@@ -915,12 +908,6 @@
 
         <script>
           $(function(){
-            $('#navplace').load('nav.html');
-          });
-        </script>
-
-        <script>
-          $(function(){
             $('#ftplace').load('ft.html');
           });
         </script>
@@ -940,6 +927,9 @@
           }
         });
         </script>
+
+                          <!-- NAV 2.0 -->
+                          <script  src="nav/js/index.js"></script>
 
     </body>
 
