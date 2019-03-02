@@ -15,7 +15,6 @@ pageWrapper.addEventListener('click', function (event) {
 				sidebarBox.classList.remove('active');
 		}
 });
-}
 
 window.addEventListener('keydown', function (event) {
 
@@ -24,3 +23,4 @@ window.addEventListener('keydown', function (event) {
 				sidebarBox.classList.remove('active');
 		}
 });
+}
