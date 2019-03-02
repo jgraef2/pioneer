@@ -1030,13 +1030,17 @@ footer {
   text-align: left;
   line-height: 1em;
   padding-top: 20px;
+  word-spacing: normal !important;
 }
 .hometile p {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em !important;
+  line-height: 1.5em !important;
   font-style: normal;
   font-weight: 300;
   text-align: left;
   padding-top: 30px;
+  letter-spacing: normal !important;
 }
 .hometilebtn {
   width: 100%;
