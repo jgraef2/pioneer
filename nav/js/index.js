@@ -1,8 +1,8 @@
+window.onload=function(){
 var sidebarBox = document.querySelector('#box'),
 sidebarbtn = document.querySelector('#btn'),
 pageWrapper = document.querySelector('#page-wrapper');
 
-window.onload=function(){
 sidebarbtn.addEventListener('click', function (event) {
 		sidebarbtn.classList.toggle('active');
 		sidebarBox.classList.toggle('active');
