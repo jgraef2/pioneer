@@ -41,7 +41,7 @@ figure:hover {
   z-index: 5;
 }
 .heavypad {
-  padding: 20%;
+  padding: 12%;
 }
 @media (max-width: 728px) {
   .headline h1 {
@@ -175,6 +175,34 @@ footer {
   color: #FFF9F5;
   background-color: #F9423A;
 }
+.availabilitybtn {
+  text-align: center;
+  height: auto;
+  width: auto;
+  flex: none;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #F9423A;
+  border: 2.8px solid #F9423A;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 4px;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+.availabilitybtn:hover {
+  color: #F9423A;
+  background-color: #FFF9F5;
+}
+.availcontainer {
+  text-align: center;
+  margin: 0 auto;
+}
 #values {
   font-family: 'EB Garamond', serif;
   font-style: normal;
@@ -215,7 +243,7 @@ footer {
   margin-bottom: 5%;
 }
 .tagline {
-  padding: 50px;
+  padding: 0px;
   font-size: 2.5rem;
   font-family: 'aleolight', serif;
   font-style: normal;
@@ -226,7 +254,7 @@ footer {
 }
 .servtagline {
   padding: 30px;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-family: 'aleolight', serif;
   font-style: normal;
   font-weight: 300;
@@ -234,6 +262,20 @@ footer {
   margin: 0 auto;
   margin-top: -200px;
   color: #3F3F3F;
+}
+.servtagline p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  padding-top: 40px;
+}
+.servtagline p italic {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 300 !important;
+  font-size: 1.2rem;
+  top: -100px !important;
 }
 .bg {
   position: fixed;
@@ -530,6 +572,7 @@ footer {
 }
 
 .headersplash {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -593,8 +636,8 @@ footer {
   transform: translateZ(0.3px) scale(0.7);
 }
 .parallax__layer--third {
-  -webkit-transform: translateZ(0.7px) scale(0.23);
-  transform: translateZ(0.7px) scale(0.23);
+  -webkit-transform: translateZ(0.7px) scale(0.32);
+  transform: translateZ(0.7px) scale(0.32);
 }
 .parallax__layer--fourth {
   -webkit-transform: translateZ(-1px) scale(2);
@@ -637,7 +680,7 @@ footer {
 
 
 .headlinecirc {
-  width: 650px;
+  width: 500px;
   margin: 0 auto;
   display: block;
   margin-top: -130px;
@@ -656,11 +699,11 @@ footer {
     margin-top: -60px;
   }
 }
-.marksthespot {
-  width: 1200px;
+.headercurve {
+  width: 100%;
   position: absolute;
-  z-index: -7;
-  margin-top: 120px;
+  z-index: 9999999999999;
+  margin-top: 100px;
 }
 #logsquiggles {
   width: 800px;
@@ -672,7 +715,7 @@ footer {
 .bgdoodle {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
-  margin-top: 50%;
+  margin-top: 40%;
   height: auto;
   overflow-y: hidden;
 }
