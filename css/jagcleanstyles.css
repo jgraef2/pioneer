@@ -1,0 +1,43 @@
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.sub1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+.sub2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 0px;
+  line-height: 1.8em;
+}
+.gray {
+  color: #3f3f3f;
+}
+.fullwidth {
+  width: 100%;
+}
+.tenpad {
+  padding: 10px;
+}
+.twentypad {
+  padding: 20px;
+}
+.thirtypad {
+  padding: 30px;
+}
+.fourtypad {
+  padding: 40px;
+}
+.fiftypad {
+  padding: 50px;
+}
+.padtop {
+  padding-top: 80px;
+}

@@ -52,9 +52,6 @@
 
         <link href="css/jagmain.css"  rel="stylesheet" type="text/css" >
 
-        <!-- NAV 2.0 --->
-        <link rel="stylesheet" href="nav/css/style.css">
-
         <script src="scripts/modernizr.js"></script>
 
         <script src="js/jag.js"></script>
@@ -66,7 +63,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
-        <!-- <link rel="stylesheet" href="css/custombox.min.css"> -->
+        <link rel="stylesheet" href="css/custombox.min.css">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126615324-1"></script>
@@ -78,45 +75,31 @@
           gtag('config', 'UA-126615324-1');
         </script>
 
-        <!-- NAV 2.0 -->
-        <script  src="nav/js/index.js"></script>
-
-        <script>
-          $(function(){
-            $('#navplace').load('nav2.html');
-          });
-        </script>
-
 	</head>
 
 
 
     <body>
 
-<!--
-      <div id="btn">
-      		<div id='top'></div>
-      		<div id='middle'></div>
-      		<div id='bottom'></div>
-      </div>
-      <div id="box">
-      		<div id="items">
-      				<div class="item" onclick="window.location.href='index.html'">Home</div>
-      				<div class="item" onclick="window.location.href='startupbrandguide.html'">Branding Guide</div>
-      				<div class="item" onclick="window.location.href='strategycall.html'">Strategy Session</div>
-      				<div class="item" onclick="window.location.href='whypioneer.html'">Why Pioneer?</div>
-      		</div>
-      		<img src="img/sigwhite.png" class="navsig">
-      </div>
--->
-      <div id="navplace">
-        <!-- NAV WILL SHOW UP HERE BECAUSE OF SCRIPT AT BOTTOM -->
-      </div>
-
-
     	<!-- header -->
 
-<div id="page-wrapper">
+      <div id="navplace">
+<!--
+        <div id="emailcontainer">
+          <div id="navemail">
+            JOSH@PIONEERMADE.COM
+          </div>
+        </div>
+
+        <nav>
+            <button onclick="window.location.href='services.html'">SERVICES</button>
+            <button onclick="window.location.href='about.html'">ABOUT</button>
+            <button onclick="window.location.href='log.html'">LOG</button>
+        </nav>
+-->
+
+      </div>
+
         	<header role="header" class="monster">
                     <img src="img/flag.gif" class="logo" alt="Quality Brand Development and Supplies by Josh Graef">
 
@@ -141,31 +124,12 @@
 
                 	<ul class="grid-lod effect-25" id="grid">
 
-                    <li>
-                    <figure class="grow">
-                      <button class="hometile" onclick="location.href='startupbrandguide.html'" type="button">
-                        <img src="img/pbadge.png" alt="" class="pbadge"/>
-                        <h2>Branding for startups and entrepreneurs</h2>
-                        <p>Launch and scale with Pioneer to bring in more customers, defend market territory, and share your vision with the world.</p>
-                        <div class="hometilebtn">VIEW BRANDING GUIDE</div>
-                      </button>
-                    </figure>
-                    </li>
-
                       	<li>
                         <figure class="grow" data-toggle="modal" data-target="#ppmodal">
                           	<img src="img/pp/header.gif" alt="" class="img-responsive"/>
                         </figure>
                         </li>
 
-                        <li>
-                        <figure class="testimonial">
-                          	<img src="img/cr/crheader.gif" alt="" class="testimonialhead"/>
-                            <h3>Lance Kelly</h3>
-                            <h4>Cockroach Clothing Co.</h4>
-                            <p>“Pioneer gave us far more than we imagined. Our startup was set up for success with branding we loved. A pleasure to work with and great quality results — we highly recommend Pioneer for all entrepreneurs.”</p>
-                        </figure>
-                        </li>
 <!-- PRIVILEGE HEADER
                         <li>
                           <figure class="grow" data-toggle="modal" data-target="#pvmodal">
@@ -199,20 +163,15 @@
                         </li>
 
                         <li>
-                          <figure class="grow" data-toggle="modal" data-target="#cpmodal">
-                              <img src="img/cp/cpcover4.gif" alt="" class="img-responsive"/>
+                          <figure class="grow" data-toggle="modal" data-target="#wsmodal">
+                              <img src="img/ws/header.gif" alt="" class="img-responsive"/>
                           </figure>
                         </li>
 
                         <li>
-                        <figure class="grow">
-                          <button class="hometile" onclick="location.href='strategycall.html'" type="button">
-                            <img src="img/pbadge.png" alt="" class="pbadge"/>
-                            <h2>We blaze trails for big ideas.</h2>
-                            <p>Land investors, attract customers, and improve team culture with strategic branding from Pioneer Brand Supply.</p>
-                            <div class="hometilebtn">FREE STRATEGY SESSION</div>
-                          </button>
-                        </figure>
+                          <figure class="grow" data-toggle="modal" data-target="#cpmodal">
+                              <img src="img/cp/cpcover4.gif" alt="" class="img-responsive"/>
+                          </figure>
                         </li>
 
 <!-- FIESTA HEADER
@@ -263,7 +222,6 @@
                           <img src="img/gx/header.png" alt="" class="img-responsive"/>
                       </figure>
                     </li>
-
 <!-- Nielson
                     <li>
                       <figure class="grow" data-toggle="modal" data-target="#nnmodal">
@@ -277,31 +235,6 @@
                       </figure>
                     </li>
 
-                    <li>
-                    <figure class="grow">
-                      <button class="hometile" onclick="location.href='strategycall.html'" type="button">
-                        <img src="img/pbadge.png" alt="" class="pbadge"/>
-                        <h2>Earn loyal customers with better branding.</h2>
-                        <p>From early adopters to laggards, branding ignites referral and repeat customers that build your community.</p>
-                        <div class="hometilebtn">FREE STRATEGY SESSION</div>
-                      </button>
-                    </figure>
-                    </li>
-
-                    <li>
-                      <figure class="grow" data-toggle="modal" data-target="#wsmodal">
-                          <img src="img/ws/header.gif" alt="" class="img-responsive"/>
-                      </figure>
-                    </li>
-
-                    <li>
-                    <figure class="testimonial">
-                        <img src="img/cr/crheader.gif" alt="" class="testimonialhead"/>
-                        <h3>Lance Kelly</h3>
-                        <h4>Cockroach Clothing Co.</h4>
-                        <p>“Pioneer gave us far more than we imagined. Our startup was set up for success with branding we loved. A pleasure to work with and great quality results — we highly recommend Pioneer for all entrepreneurs.”</p>
-                    </figure>
-                    </li>
 
                 </ul>
 
@@ -315,15 +248,15 @@
 
             <footer>
               <div class="row ftlinks">
-                <button onclick="window.location.href='startupbrandguide.html'" class="ftbut">BRANDING GUIDE</button>
-                <button onclick="window.location.href='strategycall.html'" class="ftbut ftbutinner">STRATEGY SESSION</button>
-                <button onclick="window.location.href='whypioneer.html'" class="ftbut">WHY PIONEER?</button>
+                <button onclick="window.location.href='services.html'" class="ftbut">SERVICES</button>
+                <button onclick="window.location.href='about.html'" class="ftbut ftbutinner">ABOUT</button>
+                <button onclick="window.location.href='log.html'" class="ftbut">LOG</button>
               </div>
               <div id="ftplace">
               </div>
             </footer>
         </main>
-</div>
+
     	<!-- main -->
 
 
@@ -930,17 +863,11 @@
 
         <script src="js/custombox.min.js"></script>
 
-        <!-- NAV 2.0 -->
-        <script  src="nav/js/index.js"></script>
-
         <script>
           $(function(){
-            $('#navplace').load('nav2.html');
+            $('#navplace').load('nav.html');
           });
         </script>
-
-        <!-- NAV 2.0 -->
-        <script  src="nav/js/index.js"></script>
 
         <script>
           $(function(){
@@ -963,8 +890,6 @@
           }
         });
         </script>
-
-
 
     </body>
 
