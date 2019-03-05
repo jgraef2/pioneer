@@ -650,24 +650,28 @@ footer {
 }
 @media (max-width: 920px) {
   .parallax {
+    -webkit-overflow-scrolling: touch;
     background-attachment: scroll;
     background-size: 100% 100%;
     -webkit-perspective: none;
     perspective: none;
   }
   .parallax__layer--base {
+    -webkit-overflow-scrolling: touch;
     background-attachment: scroll;
     background-size: 100% 100%;
     -webkit-transform: none;
     transform: none;
   }
   .parallax__layer--back {
+    -webkit-overflow-scrolling: touch;
     background-attachment: scroll;
     background-size: 100% 100%;
     -webkit-transform: none;
     transform: none;
   }
   .parallax__layer--third {
+    -webkit-overflow-scrolling: touch;
     background-attachment: scroll;
     background-size: 100% 100%;
     -webkit-transform: none;
@@ -675,6 +679,7 @@ footer {
     display: none;
   }
   .parallax__layer--fourth {
+    -webkit-overflow-scrolling: touch;
     background-attachment: scroll;
     background-size: 100% 100%;
     -webkit-transform: none;
@@ -682,6 +687,7 @@ footer {
     display: none;
   }
   .parallax__layer--fifth {
+    -webkit-overflow-scrolling: touch;
     background-attachment: scroll;
     background-size: 100% 100%;
     -webkit-transform: none;
