@@ -1243,9 +1243,11 @@ input[type=submit]:hover {
   font-size: 1rem;
   color: white;
   left: 20px;
+  position: fixed;
+  top: 70%;
 }
 #navemail p {
-  font-size: 2rem;
+  font-size: 2em !important;
   font-family: 'aleolight', serif;
   font-style: normal;
   font-weight: 300;

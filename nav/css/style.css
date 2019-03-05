@@ -46,10 +46,6 @@
   padding-left: 30px;
   top: 80%;
 }
-#navemail {
-  position: fixed;
-  top: 70%;
-}
 #box {
   -webkit-box-shadow: 0px 0px 90px -33px rgba(36,36,36,0.67);
 -moz-box-shadow: 0px 0px 90px -33px rgba(36,36,36,0.67);
