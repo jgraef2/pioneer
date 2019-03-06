@@ -51,17 +51,15 @@ figure:hover {
   color:#3f3f3f;
   text-align: center;
   z-index: 5;
-}
-.heavypad {
-  padding: 12%;
+  padding-top: 150px;
 }
 @media (max-width: 728px) {
   .headline h1 {
     font-size: 3.5em;
   }
   .heavypad {
-    margin-top: 28%;
-    padding: 5%;
+    margin-top: 0px;
+    padding: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -266,14 +264,13 @@ footer {
   color: #3F3F3F;
 }
 .servtagline {
-  padding: 30px;
   font-size: 2.5rem;
   font-family: 'aleolight', serif;
   font-style: normal;
   font-weight: 300;
   text-align: center;
   margin: 0 auto;
-  margin-top: -200px;
+  margin-top: 20px;
   color: #3F3F3F;
 }
 .servtagline p {
@@ -711,10 +708,10 @@ footer {
 
 
 .headlinecirc {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   display: block;
-  margin-top: -130px;
+  margin-top: -110px;
   overflow: hidden;
   z-index: -6555555555;
 }
@@ -1086,7 +1083,20 @@ footer {
   float: right;
   position: relative;
 }
-
+@media (max-width: 992px) {
+  .pbadge {
+    width: 160px !important;
+    margin-right: -100px !important;
+    margin-top: -20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .pbadge {
+    width: 220px !important;
+    margin-right: -135px !important;
+    margin-top: -70px !important;
+  }
+}
 .hometile {
   background-color: #F9423A;
   color: white;
@@ -1095,6 +1105,16 @@ footer {
   border: none;
   outline: none;
   overflow: hidden;
+}
+@media (max-width: 992px) {
+  .hometile {
+    padding: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .hometile {
+    padding: 50px;
+  }
 }
 .hometile h2 {
   font-family: 'EB Garamond', serif;
@@ -1106,6 +1126,21 @@ footer {
   padding-top: 20px;
   word-spacing: normal !important;
 }
+@media (max-width: 992px) {
+  .hometile h2 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 767px) {
+  .hometile h2 {
+    font-size: 4em;
+  }
+}
+@media (max-width: 510px) {
+  .hometile h2 {
+    font-size: 2em;
+  }
+}
 .hometile p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6em !important;
@@ -1115,6 +1150,11 @@ footer {
   text-align: left;
   padding-top: 30px;
   letter-spacing: normal !important;
+}
+@media (max-width: 510px) {
+  .hometile p {
+    font-size: 1em !important;
+  }
 }
 .hometilebtn {
   width: 100%;
@@ -1237,6 +1277,40 @@ input[type=submit]:hover {
   background-color: transparent;
   color: #F9423A;
   border: 2.8px solid #F9423A;
+}
+@media (max-width: 992px) {
+  #mc_embed_signup_scroll {
+    padding-right: 0px;
+    width: 75%;
+  }
+  #mce-EMAIL {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 4px 0px;
+    margin: 3px 0;
+    font-size: 1.8em;
+  }
+  input[type=submit] {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 510px) {
+  input[type=email] {
+    width: 100%;
+    padding: 4px 0px;
+    margin: 3px 0;
+    font-size: 1em;
+  }
+  input[type=submit] {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
 }
 #navemail {
   text-align: left;
