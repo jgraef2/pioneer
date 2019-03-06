@@ -51,11 +51,12 @@ figure:hover {
   color:#3f3f3f;
   text-align: center;
   z-index: 5;
-  padding-top: 150px;
+  padding-top: 130px;
 }
-@media (max-width: 728px) {
+@media (max-width: 800px) {
   .headline h1 {
     font-size: 3.5em;
+      padding-top: 20px;
   }
   .heavypad {
     margin-top: 0px;
@@ -387,7 +388,7 @@ footer {
   }
   .servtagline {
     padding: 0px;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     padding-top: 20px;
     padding-bottom: 0px;
     opacity: 1;
@@ -427,6 +428,11 @@ footer {
     display: block;
     white-space: pre;
     content: "JOSH@PIONEERMADE.COM";
+  }
+}
+@media (max-width: 520px) {
+  .servtagline {
+        font-size: 1.3rem;
   }
 }
 @media (max-width: 1300px) {
@@ -1185,15 +1191,17 @@ footer {
   padding: 80px !important;
   cursor: initial !important;
   letter-spacing: normal !important;
+  border: 1px solid #cccccc;
 }
 .testimonialhead {
-height: 120px !important;
-width: 120px !important;
+height: 90px !important;
+width: 90px !important;
 text-align: center !important;
 margin: 0 auto !important;
 border-radius: 50% !important;
 display: inline-block !important;
 }
+
 .testimonial h4 {
   color: #3f3f3f;
   font-size: 1em;
@@ -1211,12 +1219,21 @@ display: inline-block !important;
 .testimonial p {
   padding-top: 20px;
   color: #3f3f3f;
-  font-size: 1.8em !important;
+  font-size: 1.5em !important;
   line-height: 1.4em !important;
   font-family: 'aleolight', serif;
   font-style: normal;
   font-weight: 300;
   letter-spacing: normal !important;
+}
+@media (max-width: 992px) {
+  .testimonial p {
+    font-size: 1.2em !important;
+    line-height: 1.4em !important;
+  }
+  .testimonial {
+    padding: 30px !important;
+  }
 }
 #mc_embed_signup {
   background-color:transparent;
