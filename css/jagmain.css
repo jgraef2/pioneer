@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:800');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,800');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,400,700');
 @font-face {
     font-family: 'aleolight';
     src: url('../fonts/aleo/aleo-light-webfont.eot');
@@ -789,8 +790,11 @@ footer {
   text-decoration: underline;
 }
 .para strong {
-  letter-spacing: 6px;
-  font-size: 1em;
+  font-family: 'Aleo', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 1.5em;
 }
 @media (max-width: 920px) {
   .aboutpara {
@@ -1240,6 +1244,7 @@ display: inline-block !important;
   text-align: center;
   clear:left;
   margin: 0 auto;
+  padding-top: 70px;
   width: 100%;
 }
 #mc_embed_signup_scroll {
@@ -1248,7 +1253,7 @@ display: inline-block !important;
   display: inline-flex;
   margin: 0 auto;
   padding-right: 50px;
-  width: 70%;
+  width: 60%;
 }
 #mce-EMAIL {
   text-align: center;
@@ -1283,6 +1288,7 @@ input[type=submit] {
   background-color: #F9423A;
   color: white;
   padding: 20px 40px;
+  margin-left: 30px;
   transition-delay: 0s;
   transition-duration: 0.3s;
   transition-property: all;
@@ -1334,7 +1340,7 @@ input[type=submit]:hover {
   color: white;
   left: 20px;
   position: fixed;
-  top: 70%;
+  top: 5%;
 }
 #navemail p {
   font-size: 2em !important;
@@ -1346,3 +1352,221 @@ input[type=submit]:hover {
   color: white;
   letter-spacing: 0px;
 }
+.threemissions {
+  padding-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.missioncircle {
+  margin: 0 auto;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50% !important;
+  background-color: #F9423A;
+  color: white;
+  text-align: center;
+}
+.missioncircle p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding-top:20px;
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+.missionplus {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4em;
+  letter-spacing: 0px;
+  color: #F9423A;
+  padding-top: 90px;
+}
+.missionletter {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  letter-spacing: 0px;
+  padding-top: 10px;
+}
+@media (max-width: 992px) {
+  .threemissions {
+    flex-direction: column;
+  }
+  .missionplus {
+    padding-top: 0px;
+  }
+}
+.brandingandmarketing {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 0px;
+  display: flex;
+}
+.brandingandmarketing h1 {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4em;
+  color: #3f3f3f;
+  flex-direction: row;
+}
+@media (max-width: 992px) {
+  .brandingandmarketing {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .brandingservices {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .marketingservices {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.brandingservices {
+  padding: 50px;
+  justify-content: flex-start;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.marketingservices {
+  padding: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .brandingservices {
+    width: 90%;
+  }
+  .marketingservices {
+    width: 90%;
+  }
+}
+.servicebox {
+  display: inline-block;
+  flex-wrap: wrap;
+  background-color: #F9423A;
+  color: white;
+  padding: 10px;
+  margin: 3.8px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0px;
+}
+@media (max-width: 450px) {
+  .brandingservices {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .servicebox {
+    display: block;
+    margin: 10px;
+  }
+}
+/* TOOLTIP START */
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* Bottom */
+.tooltip-bottom:before,
+.tooltip-bottom:after {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+}
+
+.tooltip-bottom:before {
+  margin-top: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-bottom-color: #000;
+  border-bottom-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-bottom:hover:before,
+.tooltip-bottom:hover:after,
+.tooltip-bottom:focus:before,
+.tooltip-bottom:focus:after {
+  -webkit-transform: translateY(12px);
+  -moz-transform:    translateY(12px);
+  transform:         translateY(12px);
+}
+/* TOOLTIP END */
