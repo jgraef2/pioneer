@@ -1340,7 +1340,7 @@ input[type=submit]:hover {
   color: white;
   left: 20px;
   position: fixed;
-  top: 5%;
+  top: 10%;
 }
 #navemail p {
   font-size: 2em !important;
