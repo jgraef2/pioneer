@@ -3,6 +3,7 @@
 }
 
 #btn {
+  opacity: 0.015;
   position: fixed;
   z-index: 410000000000125999;
   top: 25px;

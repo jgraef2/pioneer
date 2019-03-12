@@ -773,13 +773,15 @@ footer {
   flex-wrap: wrap;
 }
 .para {
-  width: 48%;
+  width: 28%;
   font-size: 1.4em;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
-  padding: 20px;
-  padding-top: 50px;
+  margin: 20px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  border-top: 1px solid #3f3f3f;
 }
 .para a {
   color: #F9423A;
@@ -794,7 +796,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 @media (max-width: 920px) {
   .aboutpara {
@@ -1358,9 +1360,15 @@ input[type=submit]:hover {
   margin: 0 auto;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.phasecolumn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
 }
 .missioncircle {
+  flex-grow: 100%;
   margin: 0 auto;
   padding: 20px;
   width: 250px;
@@ -1379,10 +1387,13 @@ input[type=submit]:hover {
   line-height: 1.4em;
 }
 .missionplus {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 2em;
   letter-spacing: 0px;
   color: #F9423A;
   padding-top: 90px;
@@ -1391,9 +1402,12 @@ input[type=submit]:hover {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 2.3em;
   letter-spacing: 0px;
   padding-top: 10px;
+}
+.missioncircle p {
+  font-size: 2.6em;
 }
 @media (max-width: 992px) {
   .threemissions {
@@ -1455,18 +1469,65 @@ input[type=submit]:hover {
 }
 .servicebox {
   display: inline-block;
-  flex-wrap: wrap;
-  background-color: #F9423A;
-  color: white;
-  padding: 10px;
-  margin: 3.8px;
-  margin-left: 2px;
-  margin-right: 2px;
+  border: 3px solid #3f3f3f;
+  color:#3f3f3f;
+  width: 315px;
+  height: 75px;
+  padding: 18px;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
+  font-weight: 500;
   letter-spacing: 0px;
+  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+.servicebox h8 {
+  font-size: 1.6em;
+  text-align: center;
+  opacity: 1;
+  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+.servicebox p {
+  font-weight: 400;
+  margin-top: -34px;
+  color: white;
+  font-size: 1.1em;
+  opacity: 0;
+  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+.servicebox:hover {
+  background-color: #3f3f3f;
+}
+.servicebox:hover h8 {
+  opacity: 0;
+}
+.servicebox:hover p {
+  font-size: 1.1em;
+  opacity: 1;
+}
+#serviceboxes .servicebox h7 {
+  display: block;
+  position: absolute;
+  margin-left: 277px;
+  margin-top: 2px;
+  background-color: #FFF9F5;
+  z-index: 55555555;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #3f3f3f;
+  border: 3px solid #3f3f3f;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+@media (max-width: 920px) {
+  #serviceboxes .servicebox h7 {
+    display: none;
+  }
 }
 @media (max-width: 450px) {
   .brandingservices {
@@ -1475,9 +1536,14 @@ input[type=submit]:hover {
   }
   .servicebox {
     display: block;
-    margin: 10px;
   }
 }
+@media (max-width: 350px) {
+  .servicebox {
+    width: 315px;
+  }
+}
+
 /* TOOLTIP START */
 /**
  * Tooltip Styles

@@ -1,5 +1,5 @@
 window.onload=function(){
-	
+
 var sidebarBox = document.querySelector('#box'),
 sidebarbtn = document.querySelector('#btn'),
 pageWrapper = document.querySelector('#page-wrapper');
@@ -24,5 +24,6 @@ window.addEventListener('keydown', function (event) {
 				sidebarBox.classList.remove('active');
 		}
 });
+document.getElementById("btn").style.opacity = "1";
 
 }
