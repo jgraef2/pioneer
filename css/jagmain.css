@@ -1657,3 +1657,81 @@ input[type=submit]:hover {
   color: #F9423A;
 
 }
+#contactForm {
+  width: 650px;
+  margin: 0 auto;
+  outline: none !important;
+  border: none !important;
+  margin-top: 50px;
+  color: #3f3f3f;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-weight: 600 !important;
+  -webkit-appearance: none;
+  margin-bottom: 100px;
+}
+#contactForm input {
+  outline: none !important;
+  border: none !important;
+  -webkit-appearance: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  height: 50px;
+  font-weight: 600 !important;
+}
+.form-control {
+  text-align: center !important;
+  font-size: 2em;
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none !important;
+  border: none;
+  -webkit-border-radius: 0;
+  background: transparent;
+  border-top: transparent !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  color: #F9423A !important;
+}
+.control-group label {
+  letter-spacing: 5px;
+}
+#contactForm .form-control::placeholder {
+  text-align: center;
+  color: #d1d1d1 !important;
+  font-weight: 500 !important;
+  margin: 0 auto;
+}
+#sendbtn {
+  height: 80px;
+  width: 200px;
+  flex: none;
+  margin: 0 auto !important;
+  text-align: center !important;
+  background: transparent;
+  border: 2.8px solid #F9423A;
+  color: #F9423A;
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 5px;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  border-radius: 0 !important;
+}
+#sendbtn:hover {
+  color: #FFF9F5;
+  background-color: #F9423A;
+}
+.form-group {
+  margin: 0 auto;
+  text-align: center;
+}
