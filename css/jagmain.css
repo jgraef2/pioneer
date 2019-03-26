@@ -1854,3 +1854,121 @@ input[type=submit]:hover {
   border: 1px solid white;
   border-radius: 5px;
 }
+.guaranteeparent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #3f3f3f;
+}
+#guaranteeheader {
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  color: #3f3f3f;
+}
+.guaranteeitem {
+  font-size: 2.5em;
+  font-family: 'aleolight', serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.guaranteeitem img {
+  width: 20px;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+.activationsparent {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #3f3f3f;
+  align-items: flex-end;
+}
+@media (max-width: 992px) {
+  .activationsparent {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+#activationsheader {
+  color: #3f3f3f;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.activationsitem {
+  margin: 0 auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+.activationsitem img {
+  width: 70px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.somethingelse {
+  text-align: center;
+  margin: 0 auto;
+  color: #3f3f3f;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+.somethingelse strong {
+  font-weight: 600;
+}
+.getstartedbtn {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 2em;
+  text-align: center;
+  background-color: #F9423A;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 5px;
+  padding: 25px;
+  border: 3px solid #F9423A;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+.getstartedbtn:hover {
+  background-color: #FFF9F5;;
+  color: #F9423A;
+}
