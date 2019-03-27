@@ -1775,17 +1775,20 @@ input[type=submit]:hover {
   }
 }
 .sidepackagebtn {
+  display: none !important;
   border: 2px solid #F9423A;
-  height: 60px;
-  width: 60px;
-  border-radius: 100px;
+  display: inline-block;
+  height: 75px;
+  width: 120px;
+  line-height: 72px;
+  border-radius: 50%;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  padding-top: 17px;
+  padding-top:0;
   margin: 25px;
   color: #F9423A;
-  margin-top: 155px;
+  margin-top: 175px;
   transition-delay: 0s;
   transition-duration: 0.3s;
   transition-property: all;
@@ -1803,14 +1806,26 @@ input[type=submit]:hover {
 .package {
   background-color: #F9423A;
   color: white;
-  margin: 10px;
+  margin: 25px;
   margin-top: 40px;
-  width: 40%;
+  width: 23%;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 200;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
+}
+@media (max-width: 1200px) {
+  .package {
+    width: 28%;
+    margin: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .package {
+    width: 33%;
+    margin: 10px;
+  }
 }
 @media (max-width: 650px) {
   .package {
@@ -1969,6 +1984,7 @@ input[type=submit]:hover {
   transition-timing-function: ease;
 }
 .getstartedbtn:hover {
+  cursor: pointer;
   background-color: #FFF9F5;;
   color: #F9423A;
 }
