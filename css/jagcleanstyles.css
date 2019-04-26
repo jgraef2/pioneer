@@ -1,6 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,400,700');
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4em;
+  letter-spacing: 0px;
+  color: #3f3f3f;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5em;
+  letter-spacing: 0px;
+  line-height: 1.4em;
+  color: #3f3f3f;
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 5px;
+  line-height: 2em;
+  color: #3f3f3f;
+}
 .center {
   text-align: center;
   margin: 0 auto;
+}
+.fullvwwidth {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 .sub1 {
   font-family: 'Montserrat', sans-serif;
@@ -64,5 +107,96 @@
   padding: 50px;
 }
 .padtop {
-  padding-top: 80px;
+  padding-top: 90px;
+}
+.heavypadtop {
+  padding-top: 200px;
+}
+.padbottom {
+  padding-bottom: 90px;
+}
+.heavypadbottom {
+  padding-bottom: 200px;
+}
+@media (max-width: 600px) {
+  .padtop {
+    padding-top: 30px;
+  }
+  .padbottom {
+    padding-bottom: 30px;
+  }
+  .heavypadtop {
+    padding-top: 60px;
+  }
+  .heavypadbottom {
+    padding-bottom: 60px;
+  }
+}
+.roundcorner {
+  border-radius: 10px;
+}
+.workstarter {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.workstarterchild1 {
+  flex-grow: 1;
+  width: 70%;
+}
+.workstarterchild2 {
+  flex-grow: 1;
+  padding: 30px;
+}
+.quote {
+  padding: 200px;
+}
+.info1 {
+  width: 70%;
+}
+@media (max-width: 900px) {
+  .workstarter {
+    text-align: center;
+    flex-direction: column;
+  }
+  .workstarterchild1 {
+    width: 95%;
+  }
+  .workstarterchild2 {
+    display: none;
+  }
+  .info1 {
+    width: 95%;
+  }
+  .quote {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.biphoto {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.biphotochild {
+  display: block;
+  width: 49%;
+  height: auto;
+}
+.triphoto {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.triphotochild {
+  display: block;
+  width: 32%;
+  height: auto;
 }

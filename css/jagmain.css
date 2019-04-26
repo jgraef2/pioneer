@@ -139,10 +139,8 @@ nav button:hover {
 }
 .logo {
   display: block;
-  width: 330px;
+  width: 390px;
   margin: 0 auto;
-  padding-top: 1vh;
-  padding-bottom: 50px;
 }
 .hideme {
     opacity:0;
@@ -1192,7 +1190,34 @@ footer {
   color: #F9423A;
   background-color: white;
 }
-
+.portbtn {
+  opacity: 1;
+  position: absolute;
+  z-index: 5555555555;
+  width: 100%;
+  text-align: center;
+  flex: none;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: -120px;
+  background: transparent;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 5px;
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+.portlink:hover > .portbtn {
+  background-color: #F9423A;
+  opacity: 1;
+  margin-top: 0px !important;
+}
 .testimonial {
   color: #3f3f3f !important;
   padding: 80px !important;
@@ -1987,4 +2012,10 @@ input[type=submit]:hover {
   cursor: pointer;
   background-color: #FFF9F5;
   color: #F9423A;
+}
+.quoteimg {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -100px;
 }
