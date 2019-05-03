@@ -229,6 +229,7 @@ footer {
   text-align: center;
   color: #3f3f3f;
   z-index: -100000;
+  margin-top: -150px;
 }
 #badge {
   margin: 0 auto;
@@ -414,12 +415,6 @@ footer {
   .ftbutinner {
     margin-left: 0px;
     margin-right: 0px;
-  }
-  #values:after {
-    display: block;
-    white-space: pre;
-    content: "QUALITY\A CURIOSITY\A INTEGRITY";
-    line-height: 2em;
   }
   #badge {
     margin-top: 13%;
@@ -2027,7 +2022,7 @@ input[type=submit]:hover {
 }
 
 /* Style the header: fixed position (always stay at the top) */
-.scrollbar {
+.header {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -2047,4 +2042,5 @@ input[type=submit]:hover {
   height: 8px;
   background: #4caf50;
   width: 10%;
+  z-index: 5500000;
 }
