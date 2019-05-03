@@ -230,9 +230,6 @@ footer {
   color: #3f3f3f;
   z-index: -100000;
 }
-#values:after {
-    content: "CREATE OUTDOOR EXPERIENCES";
-}
 #badge {
   margin: 0 auto;
   width: 200px;
@@ -2049,5 +2046,5 @@ input[type=submit]:hover {
 .progress-bar {
   height: 8px;
   background: #4caf50;
-  width: 0%;
+  width: 10%;
 }
