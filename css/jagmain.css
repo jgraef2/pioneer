@@ -218,20 +218,20 @@ footer {
   margin: 0 auto;
 }
 #values {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight:800;
   height: 80px;
   width: 100%;
   margin: 0 auto;
-  font-size: 4em;
-  letter-spacing: 8px;
+  font-size: 12px;
+  letter-spacing: 9px;
   text-align: center;
   color: #3f3f3f;
   z-index: -100000;
 }
 #values:after {
-    content: "QUALITY • CURIOSITY • INTEGRITY";
+    content: "CREATE OUTDOOR EXPERIENCES";
 }
 #badge {
   margin: 0 auto;
