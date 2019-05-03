@@ -12,6 +12,10 @@
     font-weight: normal;
     font-style: normal;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 figure:hover {
   opacity: 1;
 }
@@ -220,7 +224,7 @@ footer {
   height: 80px;
   width: 100%;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 4em;
   letter-spacing: 8px;
   text-align: center;
   color: #3f3f3f;
@@ -779,7 +783,7 @@ footer {
   margin: 20px;
   padding-top: 15px;
   padding-bottom: 50px;
-  border-top: 1px solid #3f3f3f;
+  border-top: 2px solid #3f3f3f;
 }
 .para a {
   color: #F9423A;
@@ -790,7 +794,7 @@ footer {
   text-decoration: underline;
 }
 .para strong {
-  font-family: 'Aleo', serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0px;
@@ -864,8 +868,8 @@ footer {
   display: inline-block;
 }
 .numtag {
-  height: 1.5px;
-  background-color: #F9423A;
+  height: 2px;
+  background-color: #3f3f3f;
   width: 100%;
   margin-bottom: 45px;
 }
@@ -2018,4 +2022,9 @@ input[type=submit]:hover {
   margin: 0 auto;
   text-align: center;
   margin-bottom: -100px;
+}
+.topomatch {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }

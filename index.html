@@ -52,6 +52,8 @@
 
         <link href="css/jagmain.css"  rel="stylesheet" type="text/css" >
 
+        <script src="js/page-progress.min.js"></script>
+
         <!-- NAV 2.0 --->
         <link rel="stylesheet" href="nav/css/style.css">
 
@@ -87,12 +89,28 @@
           });
         </script>
 
+        <script>
+        (function(){
+          pageProgress('.page-progress');
+        })()
+
+        (function(){
+          var options = {
+            color: '#3f3f3f',
+            size: '30px',
+            position: 'top',
+            speed: '500',
+          }
+            pageProgress('.page-progress' , options);
+          })()
+        </script>
+
 	</head>
 
 
 
     <body>
-
+<div class="page-progress"></div>
       <div id="navplace">
         <!-- NAV WILL SHOW UP HERE BECAUSE OF SCRIPT AT BOTTOM -->
       </div>
@@ -182,7 +200,7 @@
 
 
                 <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-                  <ul class="grid-lod effect-25" id="grid">
+                  <ul class="grid-lod" id="grid">
 <!-- SENOR PICO
                     <li>
                       <figure class="grow" data-toggle="modal" data-target="#spmodal">
@@ -222,10 +240,10 @@
                       </figure>
                     </li>
 
-                    <li style="display: none;">
+                    <li>
                       <figure class="grow">
                         <a href="startupbrandingguide.html" class="portlink">
-                          <div class="portbtn">VIEW PROJECT</div>
+                          <div class="portbtn">VIEW CASE STUDY</div>
                           <img src="img/cr/crheader.gif" alt="" class="img-responsive"/>
                         </a>
                       </figure>
