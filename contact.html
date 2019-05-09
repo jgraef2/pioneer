@@ -10,7 +10,7 @@
       <meta name="description" content="Quality Brand Design Services by Your Local Freelance Designer California Creative Craftsman">
       <meta name="author" content="Josh Graef">
 
-      <title>What We Do: Pioneer Brand Supply</title>
+      <title>Contact: Pioneer Brand Supply</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -87,7 +87,7 @@
             $('#navplace').load('nav2.html');
           });
         </script>
-
+        <script  src="js/scrollbar.js"></script>
 	</head>
 
     <body>
@@ -113,89 +113,62 @@
     <main role="main-home-wrapper" class="container">
 
       <div class="center heavypadtop">
-        <h1>We&nbsp;analyze, develop and create</br>outdoor brand experiences.</h1>
+        <h1>We're ready to guide your next adventure.</h1>
+        <h2>Send us an email • josh@pioneermade.com</h2>
+        <h2>Give us a call • (724)&nbsp;495&#8209;9808</h2>
       </div>
 
-      <img src="img/topo/pioneer_snowboarding.png" style="background-image: url(img/topo/pioneer_snowboarding.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
+      <img src="img/topo/pioneer_plants.png" style="background-image: url(img/topo/pioneer_plants.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
 
       <div class="info1 center">
-        <h5>WHAT WE DO</h5>
-        <h2>Outdoor brands engage our team to improve customer relationships, establish market territory, and&nbsp;create captivating experiences.</h2>
+        <h5>WE'RE GROWING</h5>
+        <h2>Are you a brand strategist, marketer, or designer who&nbsp;loves the outdoors? Let's get in touch.</h2>
       </div>
 
-      <img src="img/topo/pioneer_camping.png" style="background-image: url(img/topo/pioneer_camping.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
-
-      <div class="info1 center">
-        <h5>EXPERTISE</h5>
-        <div class="flexcontain2col">
-          <div class="flexchild2col">
-            <h3>Brand Analysis</h3>
-            <h5 style="padding-top:20px; padding-bottom: 20px;">RESEARCH + STRATEGY</h5>
-            <p>We analyze perceptions, research market landscapes, conduct experiments, and discover growth&nbsp;opportunities.</p>
-          </div>
-          <div class="flexchild2col">
-            <h3>Brand Development</h3>
-            <h5 style="padding-top:20px; padding-bottom: 20px;">STORYTELLING + DESIGN</h5>
-            <p>We strategically personify companies with brand psychology and define identities through memorable storytelling and creative design.</p>
-          </div>
-        </div>
-
-        <h3 class="padtop">Brand Experiences</h3>
-        <h5 style="padding-top:20px; padding-bottom: 20px;">STRATEGY + DESIGN</h5>
-          <div id="experiencecontain" class="padbottom">
-            <div class="experiencechild">
-              <img src="img/packaging.svg" class="experienceicon" alt="experience">
-              <h2>Packaging</h2>
-            </div>
-            <div class="experiencechild">
-              <img src="img/print.svg" class="experienceicon" alt="experience">
-              <h2>Print</h2>
-            </div>
-            <div class="experiencechild">
-              <img src="img/adcampaign.svg" class="experienceicon" alt="experience">
-              <h2>Ad Campaign</h2>
-            </div>
-            <div class="experiencechild">
-              <img src="img/website.svg" class="experienceicon" alt="experience">
-              <h2>Website</h2>
-            </div>
-            <div class="experiencechild">
-              <img src="img/social.svg" class="experienceicon" alt="experience">
-              <h2>Social Media</h2>
-            </div>
-            <div class="experiencechild">
-              <img src="img/map.svg" class="experienceicon" alt="experience">
-              <h2>Event</h2>
-            </div>
+      <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+      <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+      <form name="sentMessage" id="contactForm" method="POST" action="http://formspree.io/josh@pioneermade.com">
+          <div class="row control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <input name="_replyto" type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
+                  <p class="text-danger"></p>
+              </div>
           </div>
 
-        <h2 class="center">Have a question?</h2></br>
-        <button onclick="window.location.href='contact.html'" class="availabilitybtn">CONTACT</button>
-      </div>
-      <img src="img/topo/pioneer_hikingmeadow.png" style="background-image: url(img/topo/pioneer_hikingmeadow.svg);" class="topomatch padtop fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
+          <div class="row control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <textarea name="message" rows="7" class="form-control" placeholder="Message + Portfolio Link" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+              </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <div class="row">
+              <div class="form-group col-xs-12">
+                  <button type="submit" id="sendbtn" class="btn btn-success btn-lg">SEND</button>
+              </div>
+          </div>
+      </form>
 
-      <div class="info1 center">
-        <h5>OUR CAUSE</h5>
-        <h2>We improve outdoor experiences by donating our time and profits to remove environmental pollutants.</h2>
-      </div>
 
-      <img src="img/topo/pioneer_surfing.png" style="background-image: url(img/topo/pioneer_surfing.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
+      <img src="img/topo/pioneer_water.png" style="background-image: url(img/topo/pioneer_water.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
+
+
 
       <div class="quote notopbotpad center">
         <img src="img/quoteimg.png" class="quoteimg" alt="Josh Graef Pioneer Brand Supply">
-        <h1>We discover and tell your story, so you can focus on living&nbsp;it.</h1>
+        <h1>The riches we seek are not silver or gold; but trust from wanderers to blaze their trails so bold.</h1>
         <h5>—JOSH GRAEF</h5>
       </div>
 
-      <img src="img/topo/pioneer_biking.png" style="background-image: url(img/topo/pioneer_biking.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
-
+      <img src="img/topo/pioneer_pebbles.png" style="background-image: url(img/topo/pioneer_pebbles.svg);" class="topomatch fullvwwidth" alt="Josh Graef Pioneer Brand Supply">
 
         <h2 class="center padtop">We’re ready to guide your next&nbsp;adventure.</h2>
         <!-- footer -->
             <footer>
               <div class="row ftlinks">
                 <button onclick="window.location.href='index.html'" class="ftbut">HOME</button>
-                <button onclick="window.location.href='whoweare.html'" class="ftbut ftbutinner">WHO WE ARE</button>
+                <button onclick="window.location.href='whatwedo.html'" class="ftbut ftbutinner">WHAT WE DO</button>
                 <button onclick="window.location.href='contact.html'" class="ftbut">CONTACT</button>
               </div>
               <div id="ftplace">
@@ -244,7 +217,6 @@
             $('#ftplace').load('ft.html');
           });
         </script>
-        <script  src="js/scrollbar.js"></script>
                   <script src="js/jag.js"></script>
                   <!-- NAV 2.0 -->
                   <script  src="nav/js/index.js"></script>

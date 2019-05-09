@@ -145,7 +145,7 @@ nav button:hover {
 }
 .logo {
   display: block;
-  width: 390px;
+  width: 380px;
   margin: 0 auto;
 }
 .hideme {
@@ -808,7 +808,6 @@ footer {
   }
 }
 .corevalues {
-  padding-top: 70px;
   color: #3f3f3f;
   display: flex;
   flex-direction: row;
@@ -1702,7 +1701,7 @@ input[type=submit]:hover {
   font-family: 'Montserrat', sans-serif;
   font-style: normal !important;
   font-weight: normal !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   -webkit-appearance: none;
   margin-bottom: 100px;
 }
@@ -1716,15 +1715,15 @@ input[type=submit]:hover {
   border: none !important;
   -webkit-appearance: none !important;
   box-shadow: none !important;
-  border-bottom: 1px solid #e8e8e8 !important;
-  height: 40px;
-  padding-bottom: 20px;
+  border: 1.5px solid #3f3f3f !important;
+  height: 70px;
+  padding: 30px;
   margin-bottom: 40px;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 .form-control {
   text-align: center !important;
-  font-size: 2em !important;
+  font-size: 24px !important;
   border:none;
   background-image:none;
   background-color:transparent;
@@ -1737,16 +1736,18 @@ input[type=submit]:hover {
   border-top: transparent !important;
   border-left: transparent !important;
   border-right: transparent !important;
-  border-bottom: 1px solid #e8e8e8 !important;
+  border: 1.5px solid #3f3f3f !important;
   color: #F9423A !important;
+  padding: 30px;
+  resize: none;
 }
 .control-group label {
   letter-spacing: 5px;
 }
 #contactForm .form-control::placeholder {
   text-align: center;
-  color: #d1d1d1 !important;
-  font-weight: 500 !important;
+  color: #3f3f3f !important;
+  font-weight: 400 !important;
   margin: 0 auto;
 }
 #sendbtn {
@@ -2019,10 +2020,14 @@ input[type=submit]:hover {
 /* Style the header: fixed position (always stay at the top) */
 .header {
   position: fixed;
-  bottom: 0;
+  top: 0;
   z-index: 1;
   width: 100%;
   background-color: transparent;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: linear;
 }
 
 /* The progress container (grey background) */
@@ -2038,14 +2043,17 @@ input[type=submit]:hover {
   background: #F9423A;
   width: 0%;
   overflow-y: visible;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 992px) {
   .progress-container {
-    height: 3px;
+    height: 4px;
   }
   .progress-bar {
-    height: 3px;
-    background: #3f3f3f;
+    height: 4px;
+    background: #F9423A;
   }
 }
