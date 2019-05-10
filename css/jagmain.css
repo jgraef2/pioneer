@@ -1193,25 +1193,24 @@ footer {
   font-style: normal;
   font-weight: 600;
   text-align: left;
-  position: absolute;
   z-index: 5555555555;
-  background: rgba(24.7, 24.7, 24.7, 0.6);
-  margin: 0 auto;
+  background: rgba(24.7, 24.7, 24.7, 0.5);
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 0px;
-  height: 150px;
-  bottom: 0px !important;
-  overflow-y: hidden;
   transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
+  position: absolute;
+  height: 160px;
+  overflow-y: hidden;
+  bottom: 0;
 }
 .articlecontain:hover > .articletile {
-  height: 300px;
   background: rgba(24.7, 24.7, 24.7, 0.8);
   margin-top: 0;
+  height: 380px;
   transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
@@ -1236,7 +1235,7 @@ footer {
   transition-property: all;
   transition-timing-function: ease;
 }
-.articlecontain:hover > .readmorebtn {
+.articletile:hover > .readmorebtn {
   color: #3f3f3f;
   background-color: white;
   transition-delay: 0s;
@@ -1244,8 +1243,20 @@ footer {
   transition-property: all;
   transition-timing-function: ease;
 }
+@media (max-width: 1200px) {
+  .articlecontain:hover > .articletile {
+    height: 160px;
+    background: rgba(24.7, 24.7, 24.7, 0.8);
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+
+  }
+}
 .portbtn {
   opacity: 1;
+  background-color: #3f3f3f;
   position: absolute;
   z-index: 5555555555;
   width: 100%;
@@ -1268,8 +1279,7 @@ footer {
   transition-timing-function: ease;
 }
 .portlink:hover > .portbtn {
-  background-color: #F9423A;
-  opacity: 1;
+  background: rgba(24.7, 24.7, 24.7, 0.6);
   margin-top: 0px !important;
 }
 .testimonial {
