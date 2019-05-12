@@ -1210,7 +1210,7 @@ footer {
 .articlecontain:hover > .articletile {
   background: rgba(24.7, 24.7, 24.7, 0.8);
   margin-top: 0;
-  height: 380px;
+  height: 350px;
   transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
@@ -1253,6 +1253,23 @@ footer {
     transition-timing-function: ease;
 
   }
+}
+@media (max-width: 992px) {
+  .articletile h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .articletile h4 {
+    font-size: 26px;
+  }
+}
+.chevronsvg {
+  position: absolute !important;
+  margin-top: -50px !important;
+  right: 0 !important;
+  margin-right: 15px !important;
+  width: 10px !important;
 }
 .portbtn {
   opacity: 1;
