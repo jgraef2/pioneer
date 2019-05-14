@@ -1,0 +1,6 @@
+User-agent: *
+Sitemap: http://www.pioneermade.com/sitemap.xml
+
+Disallow: /uncharted.html
+Disallow: /nav/
+Disallow: /old/
