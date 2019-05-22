@@ -1239,7 +1239,7 @@ footer {
   color: #3f3f3f;
   background-color: white;
   transition-delay: 0s;
-  transition-duration: 0.9s;
+  transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
 }
