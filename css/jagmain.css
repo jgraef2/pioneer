@@ -22,12 +22,12 @@ figure:hover {
   opacity: 1;
 }
 #pwordmark {
-  width: 300px;
+  width: 100px;
   position: fixed;
   margin: 0 auto;
   padding-top: 20px;
   left: 50%;
-  margin-left: -150px; /* Negative half of width. */
+  margin-left: -50px; /* Negative half of width. */
   z-index: 50000;
 }
 #pwordmarkmobile {
@@ -42,9 +42,9 @@ figure:hover {
     margin: 0 auto;
     padding-top: 10px;
     left: 50%;
-    margin-left: -150px; /* Negative half of width. */
+    margin-left: -50px; /* Negative half of width. */
     display: block;
-    width: 300px;
+    width: 100px;
   }
 }
 
@@ -2178,74 +2178,42 @@ input[type=submit]:hover {
   margin-bottom: 30px;
   margin-top: 30px;
 }
-#siglogo {
-  font-family: 'EB Garamond', serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  letter-spacing: 0px;
-  color: #F9423A;
+.startbtn {
+  z-index: 99999999999999999 !important;
+  display: inline-block !important;
+  position: fixed;
+  top: 11px;
+  right: 9px;
+  height: 45px;
+  -webkit-animation: btnWiggle 4s infinite;
+  -moz-animation: btnWiggle 4s infinite;
+  -o-animation: btnWiggle 4s infinite;
+  animation: btnWiggle 4s infinite;
 }
-#signame {
-  margin: 0 auto;
-  text-align: left;
-  color: #3f3f3f;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  letter-spacing: 0px;
-  padding: 0px;
+.startbtn:hover {
+  height: 50px;
+  -webkit-transform: translateX(+20px);
+  transform: translate(-30px, -25px);
 }
-#sigtitle {
-  margin: 0 auto;
-  text-align: left;
-  color: #3f3f3f;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0px;
-  padding: 0px;
-  margin-top: -5px;
+/* animation */
+@-webkit-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
 }
-#signumber {
-  margin: 0 auto;
-  text-align: left;
-  color: #3f3f3f;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0px;
-  padding: 0px;
-  padding-top: 0px;
+@-o-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
 }
-#sigurl {
-  margin: 0 auto;
-  width: auto;
-  display: inline-block;
-  text-align: left;
-  color: #F9423A;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 3px;
-  padding: 10px;
-  margin-top: 10px;
-  border: 2px solid #F9423A;
-  text-decoration: none;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: linear;
-}
-#sigurl:hover {
-  background-color: #F9423A;
-  color: white;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: linear;
+@keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
 }
