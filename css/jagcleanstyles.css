@@ -40,7 +40,7 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: 5px;
   line-height: 2em;
   color: #3f3f3f;
@@ -183,9 +183,6 @@ p {
   flex-grow: 1;
   padding: 30px;
 }
-.quote {
-  padding: 100px;
-}
 .info1 {
   width: 70%;
 }
@@ -202,10 +199,6 @@ p {
   }
   .info1 {
     width: 95%;
-  }
-  .quote {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .biphoto {

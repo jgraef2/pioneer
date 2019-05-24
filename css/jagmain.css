@@ -38,13 +38,15 @@ figure:hover {
     display: none;
   }
   #pwordmarkmobile {
-    position: relative;
+    position: fixed;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 20px;
     left: 50%;
-    margin-left: -50px; /* Negative half of width. */
+    margin-left: -40px; /* Negative half of width. */
     display: block;
-    width: 100px;
+    width: 80px;
+    z-index: 50000;
+
   }
 }
 
@@ -1077,31 +1079,31 @@ footer {
   }
 }
 .pbadge {
-  width: 160px;
-  margin-right: -110px;
-  margin-top: -90px;
+  width: 130px;
+  margin-right: -105px;
+  margin-top: -40px;
   float: right;
   position: relative;
 }
 @media (max-width: 992px) {
   .pbadge {
-    width: 160px !important;
-    margin-right: -100px !important;
-    margin-top: -20px !important;
+    width: 130px !important;
+    margin-right: -80px !important;
+    margin-top: -10px !important;
   }
 }
 @media (max-width: 768px) {
   .pbadge {
-    width: 220px !important;
-    margin-right: -135px !important;
-    margin-top: -70px !important;
+    width: 110px !important;
+    margin-right: -80px !important;
+    margin-top: -30px !important;
   }
 }
 .hometile {
   background-color: #F9423A;
   color: white;
   padding: 70px;
-  padding-top: 130px;
+  padding-top: 70px;
   border: none;
   outline: none;
   overflow: hidden;
@@ -1116,44 +1118,45 @@ footer {
     padding: 50px;
   }
 }
-.hometile h2 {
+.hometile h1 {
+  color: white;
   font-family: 'EB Garamond', serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 4em;
+  font-size: 55px;
   text-align: left;
   line-height: 1em;
-  padding-top: 20px;
+  padding-top: 0px;
   word-spacing: normal !important;
 }
 @media (max-width: 992px) {
-  .hometile h2 {
-    font-size: 2.5em;
+  .hometile h1 {
+    font-size: 39px;
   }
 }
 @media (max-width: 767px) {
-  .hometile h2 {
-    font-size: 4em;
+  .hometile h1 {
+    font-size: 58px;
   }
 }
 @media (max-width: 510px) {
-  .hometile h2 {
-    font-size: 2em;
+  .hometile h1 {
+    font-size: 30px;
   }
 }
 .hometile p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6em !important;
+  font-size: 22px !important;
   line-height: 1.5em !important;
   font-style: normal;
   font-weight: 300;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 0px;
   letter-spacing: normal !important;
 }
 @media (max-width: 510px) {
   .hometile p {
-    font-size: 1em !important;
+    font-size: 18px !important;
   }
 }
 .hometilebtn {
@@ -1188,33 +1191,43 @@ footer {
 }
 .articletile {
   color: white !important;
-  font-size: 1.2em;
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   text-align: left;
   z-index: 5555555555;
-  background: rgba(24.7, 24.7, 24.7, 0.5);
+  background: rgba(24.7, 24.7, 24.7, 0.6);
   padding-right: 40px;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-top: 0px;
   transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
   position: absolute;
-  height: 160px;
+  height: 150px;
   overflow-y: hidden;
   bottom: 0;
 }
+.articletile h4 {
+  font-size: 22px;
+}
+@media (max-width: 1200px) {
+  .articletile h4 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
 .articlecontain:hover > .articletile {
-  background: rgba(24.7, 24.7, 24.7, 0.8);
+  background: rgba(24.7, 24.7, 24.7, 0.9);
   margin-top: 0;
   height: 350px;
   transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
+}
 }
 .readmorebtn {
   font-size: 14px;
@@ -1243,25 +1256,24 @@ footer {
   transition-property: all;
   transition-timing-function: ease;
 }
-@media (max-width: 1200px) {
-  .articlecontain:hover > .articletile {
-    height: 160px;
-    background: rgba(24.7, 24.7, 24.7, 0.8);
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition-property: all;
-    transition-timing-function: ease;
-
-  }
-}
 @media (max-width: 992px) {
   .articletile h4 {
-    font-size: 20px;
+    font-size: 14px;
+    padding-bottom: 500px;
+  }
+  .articletile {
+    height: 120px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .articletile h4 {
-    font-size: 26px;
+    font-size: 3.6vw;
+  }
+  .articletile h5 {
+    font-size: 2vw;
+  }
+  .articletile {
+    height: 26vw;
   }
 }
 .chevronsvg {
@@ -2136,9 +2148,9 @@ input[type=submit]:hover {
   background: #F9423A;
   width: 0%;
   overflow-y: visible;
-  -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 992px) {
@@ -2155,13 +2167,28 @@ input[type=submit]:hover {
   display: block;
   text-align: center;
   background-color: #FFF9F5;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 20px;
   margin: 0 auto;
-  width: 80vw;
-  margin-top: -180px;
+  margin-top: -10vw;
   z-index: 9 !important;
+}
+@media (max-width: 500px) {
+  .articlehead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .articlehead p {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  .articlehead h1 {
+    font-size: 30px;
+  }
+  .articlehead .quote {
+    font-size: 30px;
+  }
 }
 .articlehead .firsthfive {
   background-color: #3f3f3f;
@@ -2171,49 +2198,26 @@ input[type=submit]:hover {
   margin-top: -50px;
 }
 .vertstroke {
-  height: 120px;
+  height: 100px;
   width: 1px;
   background-color: #3f3f3f;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.startbtn {
-  display: inline-block !important;
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  height: 45px;
-  z-index: 999999999999999999999999999999999999999999999999999999999999 !important;
-  -webkit-animation: btnWiggle 4s infinite;
-  -moz-animation: btnWiggle 4s infinite;
-  -o-animation: btnWiggle 4s infinite;
-  animation: btnWiggle 4s infinite;
+.quote {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: #3f3f3f;
+  padding: 10px;
 }
-.startbtn:hover {
-  height: 50px;
-  -webkit-transform: translateX(+20px);
-  transform: translate(-30px, -25px);
-}
-/* animation */
-@-webkit-keyframes btnWiggle {
-	0% {-webkit-transform: rotate(0deg);}
-	2% {-webkit-transform: rotate(-1deg);}
-	3.5% {-webkit-transform: rotate(1deg);}
-	5% {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(0deg);}
-}
-@-o-keyframes btnWiggle {
-	0% {-webkit-transform: rotate(0deg);}
-	2% {-webkit-transform: rotate(-1deg);}
-	3.5% {-webkit-transform: rotate(1deg);}
-	5% {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(0deg);}
-}
-@keyframes btnWiggle {
-	0% {-webkit-transform: rotate(0deg);}
-	2% {-webkit-transform: rotate(-1deg);}
-	3.5% {-webkit-transform: rotate(1deg);}
-	5% {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(0deg);}
+@media (max-width: 900px) {
+  .quote {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
