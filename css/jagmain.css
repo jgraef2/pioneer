@@ -12,6 +12,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+font-family: 'Nobility Casual';
+font-style: normal;
+font-weight: normal;
+src: local('Nobility Casual'), url('nobilty.woff') format('woff');
+}
 html, body {
   width: 100%;
 }
