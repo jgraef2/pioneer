@@ -18,6 +18,33 @@ src: local('Nobility Casual'), url('../fonts/nobilty.woff') format('woff');
 font-style: normal;
 font-weight: normal;
 }
+html {
+  font-size: 62.5%;
+}
+html::selection {
+  color: #5D0000;
+}
+@media(min-width: 576px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media(min-width: 768px) {
+  html {
+    font-size: 115%;
+  }
+}
+@media(min-width: 992px) {
+  html {
+    font-size: 135%;
+  }
+}
+@media(min-width: 1200px) {
+  html {
+    font-size: 150%;
+  }
+}
+
 html, body {
   width: 100%;
 }
@@ -1800,36 +1827,7 @@ input[type=submit]:hover {
   color: #F9423A;
 
 }
-#contactForm {
-  width: 650px;
-  margin: 0 auto;
-  outline: none !important;
-  border: none !important;
-  margin-top: 50px;
-  color: #3f3f3f;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-weight: 400 !important;
-  -webkit-appearance: none;
-  margin-bottom: 100px;
-}
-@media (max-width: 700px) {
-  #contactForm {
-    width: 320px;
-  }
-}
-#contactForm input {
-  outline: none !important;
-  border: none !important;
-  -webkit-appearance: none !important;
-  box-shadow: none !important;
-  border: 1.5px solid #3f3f3f !important;
-  height: 70px;
-  padding: 30px;
-  margin-bottom: 40px;
-  font-weight: 400 !important;
-}
+
 .form-control {
   text-align: center !important;
   font-size: 24px !important;
@@ -1852,36 +1850,6 @@ input[type=submit]:hover {
 }
 .control-group label {
   letter-spacing: 5px;
-}
-#contactForm .form-control::placeholder {
-  text-align: center;
-  color: #3f3f3f !important;
-  font-weight: 400 !important;
-  margin: 0 auto;
-}
-#sendbtn {
-  height: 80px;
-  width: 200px;
-  flex: none;
-  margin: 0 auto !important;
-  text-align: center !important;
-  background: transparent;
-  border: 2.8px solid #F9423A;
-  color: #F9423A;
-  font-size: 1.4em;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 5px;
-  transition-delay: 0s;
-  transition-duration: 0.3s;
-  transition-property: all;
-  transition-timing-function: ease;
-  border-radius: 0 !important;
-}
-#sendbtn:hover {
-  color: #FFF9F5;
-  background-color: #F9423A;
 }
 .form-group {
   margin: 0 auto;
@@ -2226,4 +2194,205 @@ input[type=submit]:hover {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+
+
+.bgcontainer {
+  overflow: hidden;
+  position: relative;
+  height: 290px;
+  width: 100%;
+  margin-bottom: 50px;
+  background-image: url('../img/headerbg.png');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 576px) {
+  .bgcontainer {
+    height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .bgcontainer {
+    height: 600px;
+  }
+}
+
+.footerbg {
+  width: 100%;
+}
+.cornerlines {
+  width: 22rem;
+  position: absolute;
+  z-index: 10;
+  right: -5rem;
+  top: -5rem;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.wordmark {
+  width: 4.5rem;
+  padding-top: 2rem;
+  z-index: 5;
+}
+h1 {
+  color: #5D0000;
+  font-family: 'Nobility Casual';
+  font-weight: normal;
+  font-size: 2rem;
+  z-index: 5;
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+}
+.bgcontainer h1 {
+  padding-top: 100px;
+}
+@media (min-width: 576px) {
+  .bgcontainer h1 {
+    padding-top: 200px;
+  }
+}
+
+h2 {
+  color: #FFF9F5;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  z-index: 5;
+  margin-top: 0.1rem !important;
+  margin-bottom: 0.1rem !important;
+}
+.nopad {
+  padding: 0;
+}
+
+.ftbgcontainer {
+  overflow: hidden;
+  position: relative;
+  height: 290px;
+  width: 100%;
+  margin-top: 0px;
+  background-image: url('../img/footerbg.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ftbgcontainer h1 {
+  color: #F9423A;
+}
+@media (min-width: 576px) {
+  .ftbgcontainer {
+    height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .ftbgcontainer {
+    height: 600px;
+  }
+}
+.empoweremblem {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  width: 4rem;
+}
+#footerform {
+  padding: 0px;
+  width: 25rem;
+  max-width: 80vw;
+  height: 3rem;
+  margin-top: 2rem;
+}
+#emailform2 {
+  position: absolute;
+  display: inline-block !important;
+  background-color: white;
+  border: 0px !important;
+  border-width: 0px;
+  border-color: white;
+  outline: none;
+  border-radius: 300px;
+  height: 100%;
+  width: 100% !important;
+  font-size: 1.4rem !important;
+  font-weight: 300;
+  color: #F9423A !important;
+  text-align: left !important;
+  margin: 0 auto;
+  padding-left: 1.4rem;
+  margin-left: 0px;
+  text-decoration: none;
+}
+#emailform2::placeholder {
+  color: #5D0000 !important;
+}
+#sendbtn2 {
+  position: absolute;
+  display: inline-block !important;
+  background-color: #5D0000 !important;
+  border-radius: 300px;
+  border: none !important;
+  height: 2.6rem;
+  width: 2.6rem;
+  right: 0.19rem;
+  top: 0.18rem !important;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-out;
+}
+#sendbtn2:hover {
+  background-color: #F9423A !important;
+}
+#buttonbglines {
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: #f9243A;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-out;
+}
+#sendbtn2:hover #buttonbglines {
+  fill: white;
+}
+#chevbtn {
+  fill: none;
+  stroke: #fff9f5;
+  stroke-width: 9px;
+  position: absolute;
+  margin-top: -2.1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: -0.5rem;
+  z-index: 100;
+}
+.footeremblem {
+  width: 9rem;
+  left: 70vw;
+  margin-top: -4.3rem;
+  position: absolute;
+}
+.contactfooter {
+  height: 300px;
+  background-color: #F9423A;
+  background-image:url('../img/tinylinesbg.svg');
+  line-height: 0.1rem;
+}
+
+.footinfo {
+  padding-top: 3rem;
+}
+
+.top2rem {
+  padding-top: 1rem;
 }

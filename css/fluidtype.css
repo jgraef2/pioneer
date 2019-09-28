@@ -1,0 +1,73 @@
+// Change scale
+
+$mod_1: 1.067;
+$mod_2: 1.333;
+
+
+// Calculate Modular Scale
+// You don't need to calculate this with Sass
+// You can use values from http://type-scale.com/
+// Or random values :)
+
+$h1-min: $mod_1 * $mod_1 * $mod_1 * $mod_1 * 1rem;
+$h1-max: $mod_2 * $mod_2 * $mod_2 * $mod_2 * 1rem;
+
+$h2-min: $mod_1 * $mod_1 * $mod_1 * 1rem;
+$h2-max: $mod_2 * $mod_2 * $mod_2 * 1rem;
+
+$h3-min: $mod_1 * $mod_1 * 1rem;
+$h3-max: $mod_2 * $mod_2 * 1rem;
+
+$h4-min: $mod_1 * 1rem;
+$h4-max: $mod_2 * 1rem;
+
+$h5-min: 1rem;
+$h5-max: 1rem;
+
+$h6-min: (1rem / $mod_1);
+$h6-max: (1rem / $mod_2);
+
+
+// Apply fluid type mixin
+
+.mod_scale_fluid{
+	h1{
+		@include fluid-type(font-size,37.5rem, 80rem, $h1-min, $h1-max);
+	}
+
+	h2{
+		@include fluid-type(font-size,37.5rem, 80rem, $h2-min, $h2-max);
+	}
+
+	h3{
+		@include fluid-type(font-size,37.5rem, 80rem, $h3-min, $h3-max);
+	}
+
+	h4{
+		@include fluid-type(font-size,37.5rem, 80rem, $h4-min, $h4-max);
+	}
+
+	h5{
+		@include fluid-type(font-size,37.5rem, 80rem, $h5-min, $h5-max);
+	}
+
+	h6{
+		@include fluid-type(font-size, 37.5rem, 80rem, $h6-min, $h6-max);
+	}
+
+}
+
+
+
+
+
+
+
+// Not related to Demo
+
+body{
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 { padding: 0; margin: 0.5rem 0; line-height: 1.5;}

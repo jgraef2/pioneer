@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,500i,600,600i');
+@font-face {
+font-family: 'Nobility Casual';
+src: local('Nobility Casual'), url('../fonts/nobilty.woff') format('woff');
+font-style: normal;
+font-weight: normal;
+}
