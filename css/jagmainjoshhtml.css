@@ -2302,8 +2302,8 @@ h2 {
   margin: auto;
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 1rem;
-  width: 6rem;
+  margin-bottom: 2.5rem;
+  width: 5.5rem;
 }
 #footerform {
   padding: 0px;
@@ -2316,29 +2316,44 @@ h2 {
   position: absolute;
   display: inline-block !important;
   background-color: #f9423A;
-  border: 0px !important;
+  border: solid 0px #F9423A;
+  border: none;
   border-width: 0px;
-  border-color: #fff9f5;
   outline: none;
   border-radius: 300px;
   height: 100%;
   width: 100% !important;
-  font-size: 1.4rem !important;
-  font-weight: 300;
+  font-size: 1.1rem !important;
+  font-weight: 500;
   color: #fff9f5 !important;
   text-align: left !important;
   margin: 0 auto;
   padding-left: 1.4rem;
+  padding-right: 3rem;
   margin-left: 0px;
   text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-out;
 }
 #emailform2::placeholder {
-  color: #5D0000 !important;
+  color: #FFF9F5 !important;
 }
+#emailform2:hover {
+  background-color: #5D0000;
+  border: solid 1px #F9423A;
+  color: #FFF9F5 !important;
+}
+#emailform2:focus {
+    border: solid 1px #fff9f5 !important;
+    background-color: #5D0000 !important;
+}
+
 #sendbtn2 {
   position: absolute;
   display: inline-block !important;
-  background-color: #5D0000 !important;
+  background-color: #F9423A !important;
   border-radius: 300px;
   border: none !important;
   height: 2.6rem;
@@ -2352,19 +2367,19 @@ h2 {
   clear: both;
 }
 #sendbtn2:hover {
-  background-color: #F9423A !important;
+  background-color: #5D0000 !important;
 }
 #buttonbglines {
   width: 2.6rem;
   height: 2.6rem;
-  fill: #f9243A;
+  fill: #5D0000;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-property: all;
   transition-timing-function: ease-out;
 }
 #sendbtn2:hover #buttonbglines {
-  fill: #5D0000;
+  fill: #F9423A;
 }
 #chevbtn {
   fill: none;
