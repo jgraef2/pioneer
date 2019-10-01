@@ -2425,13 +2425,3 @@ h2 {
 .top2rem {
   padding-top: 1rem;
 }
-#cornerlines img {
-  width: 800px;
-  height: 800px;
-  display: block;
-  -webkit-mask-image: url('../img/cornerlinesmask.svg');
-   -webkit-mask-mode: alpha;
-    -webkit-mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-position: top left;
-}
