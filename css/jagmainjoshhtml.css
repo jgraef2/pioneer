@@ -2379,12 +2379,7 @@ h2 {
   transition-property: all;
   transition-timing-function: ease-out;
 }
-#sendbtn2:hover object {
-  fill: #F9423A;
-}
-#sendbtn2 object:hover {
-  fill: white;
-}
+
 #buttonbglines:hover {
   /*fill: #F9423A;*/
 }
