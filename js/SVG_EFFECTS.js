@@ -1,5 +1,5 @@
 
-window.addEventListener('load', function) {
+body.onload=function() {
 
   var sendbtn2 = document.getElementById("sendbtn2");
 
