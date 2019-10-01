@@ -11,7 +11,7 @@ window.onload=function() {
 	var svgDoc = a.contentDocument;
   window.alert("3");
 	// Get one of the SVG items by ID;
-	var svgItem = svgDoc.getElementById("poop");
+	var svgItem = svgDoc.getElementById("buttonbglines");
   window.alert("4");
 	// Set the colour to something else
 	svgItem.setAttribute("fill", "lime");
