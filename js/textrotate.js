@@ -39,7 +39,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-body.onload = function() {
+window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
