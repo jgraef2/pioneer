@@ -1,14 +1,15 @@
 
 alert("SVG_EFFECTS.JS LOADED");
 
-var animData = {
-        container: document.getElementById('container'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'https://labs.nearpod.com/bodymovin/demo/2016/data.json'
-    };
-    var anim = bodymovin.loadAnimation(animData);
+
+//var animData = {
+//        container: document.getElementById('container'),
+//        renderer: 'svg',
+//        loop: true,
+//        autoplay: true,
+//        path: 'https://labs.nearpod.com/bodymovin/demo/2016/data.json'
+//    };
+//    var anim = bodymovin.loadAnimation(animData);
 
 svgEffects = function() {
 

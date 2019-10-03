@@ -43,7 +43,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-textRotate function() {
+textRotate = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
