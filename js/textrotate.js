@@ -1,3 +1,6 @@
+alert("textrotate.JS LOADED");
+
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -39,7 +42,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-window.onload = function() {
+textRotate function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');

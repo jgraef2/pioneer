@@ -1,3 +1,6 @@
+
+alert("SVG_EFFECTS.JS LOADED");
+
 var animData = {
         container: document.getElementById('container'),
         renderer: 'svg',
@@ -7,7 +10,7 @@ var animData = {
     };
     var anim = bodymovin.loadAnimation(animData);
 
-window.onload=function() {
+svgeffects function() {
 
   var sendbtn2 = document.getElementById("sendbtn2");
 
