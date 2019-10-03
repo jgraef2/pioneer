@@ -1,4 +1,6 @@
 
+alert("Hello! I am an alert box!");
+
 ///// SVG EFFECTS FOR BUTTON BG LINES /////
 
         var animData = {
@@ -29,7 +31,6 @@
           sendbtn2.addEventListener('mouseout', function(){
           svgItem.setAttribute("fill", "#5D0000");
           })
-
         };
 
 /// TEXT ROTATE /////
