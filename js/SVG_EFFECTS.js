@@ -10,7 +10,7 @@ var animData = {
     };
     var anim = bodymovin.loadAnimation(animData);
 
-svgeffects function() {
+svgEffects = function() {
 
   var sendbtn2 = document.getElementById("sendbtn2");
 

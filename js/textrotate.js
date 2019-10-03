@@ -1,3 +1,4 @@
+
 alert("textrotate.JS LOADED");
 
 
