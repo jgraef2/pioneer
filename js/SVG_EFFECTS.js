@@ -1,7 +1,4 @@
 
-alert("SVG_EFFECTS.JS LOADED");
-
-
 //var animData = {
 //        container: document.getElementById('container'),
 //        renderer: 'svg',
