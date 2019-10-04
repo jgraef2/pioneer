@@ -2354,8 +2354,8 @@ h2 {
   position: absolute;
   display: inline-block !important;
   background-color: #F9423A !important;
-  border-radius: 300px;
   border: none !important;
+  border-radius: 300px;
   height: 2.6rem;
   width: 2.6rem;
   right: 0.19rem;
@@ -2364,12 +2364,12 @@ h2 {
   transition-duration: 0.2s;
   transition-property: all;
   transition-timing-function: ease-out;
-  clear: both;
 }
 #sendbtn2:hover {
   background-color: #5D0000 !important;
 }
 #buttonbglines {
+  pointer-events: none;
   width: 2.6rem;
   height: 2.6rem;
   fill: #5D0000;
@@ -2377,10 +2377,6 @@ h2 {
   transition-duration: 0.2s;
   transition-property: all;
   transition-timing-function: ease-out;
-}
-
-#buttonbglines:hover {
-  /*fill: #F9423A;*/
 }
 #chevbtn {
   fill: none;
@@ -2391,12 +2387,11 @@ h2 {
   width: 1.3rem;
   height: 1.3rem;
   margin-left: -0.5rem !important;
-  z-index: 100;
+  z-index: 10;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-property: all;
   transition-timing-function: ease-in-out;
-  clear: both;
 }
 #sendbtn2:hover #chevbtn {
   stroke: #fff9f5 !important;
