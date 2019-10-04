@@ -2369,6 +2369,7 @@ h2 {
   background-color: #5D0000 !important;
 }
 #buttonbglines {
+  display: inline-block;
   pointer-events: none;
   width: 2.6rem;
   height: 2.6rem;
