@@ -86,12 +86,17 @@
           gtag('config', 'UA-126615324-1');
         </script>
 
+
         <link href="css/jagmain.css"  rel="stylesheet" type="text/css" >
         <link href="css/jagcleanstyles.css"  rel="stylesheet" type="text/css" >
         <link href="css/linkanimation.scss"  rel="stylesheet" type="text/scss" >
         <link href="css/linkanimation.css"  rel="stylesheet" type="text/css" >
 
-
+        <script>
+          $(function(){
+            $('#navplace').load('nav2.html');
+          });
+        </script>
 
         <script  src="js/scrollbar.js"></script>
 	</head>
@@ -311,15 +316,6 @@
         <script src="js/custombox.min.js"></script>
 
         <script>
-          $(document).ready(function() {
-            $('#navplace').load('nav2.html');
-          });
-        </script>
-
-        <!-- NAV 2.0 -->
-        <script  src="nav/js/index.js"></script>
-
-        <script>
         $(document).ready(function() {
           $('#ftplace').load('ft.html');
         });
@@ -334,6 +330,15 @@
           }
         });
         </script>
+
+        <script>
+          $(function(){
+            $('#navplace').ready('nav2.html');
+          });
+        </script>
+
+        <!-- NAV 2.0 -->
+        <script  src="nav/js/index.js"></script>
 
         <script>
 //// ALL ONLOADS /////
