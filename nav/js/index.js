@@ -1,4 +1,4 @@
-window.onload=function(){
+startNav = function() {
 
 var sidebarBox = document.querySelector('#box'),
 sidebarbtn = document.querySelector('#btn'),
