@@ -414,6 +414,15 @@ footer {
   #navemail {
     display: none;
   }
+  #box2 {
+
+  }
+  #items2 {
+
+  }
+  .item2 {
+    
+  }
   footer .row {
     flex-direction: column;
     align-items: center;
@@ -2225,5 +2234,24 @@ input[type=submit]:hover {
   .quote {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+.casestudy {
+  position: relative;
+  width: 100%;
+  overflow: hidden !important;
+}
+.slider {
+  right: 0;
+  position: relative !important;
+  height: 450px;
+  width: 100%;
+  margin-right: 2000px;
+  overflow: scroll !important;
+
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+  display: none;
   }
 }
