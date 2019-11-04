@@ -1,5 +1,5 @@
 startNav = function() {
-window.alert("sometext");
+
 var sidebarBox = document.querySelector('#box'),
 sidebarbtn = document.querySelector('#btn'),
 pageWrapper = document.querySelector('#page-wrapper');
